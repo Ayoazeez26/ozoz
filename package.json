@@ -1,5 +1,5 @@
 {
-  "name": "ticketing",
+  "name": "ozoz-sokoh",
   "private": true,
   "type": "module",
   "scripts": {
@@ -19,6 +19,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.12.2"
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "nuxt-headlessui": "^1.2.0"
   }
 }

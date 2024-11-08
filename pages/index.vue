@@ -1,5 +1,8 @@
 <template>
   <div>
-    <TicketHome />
+    <Header />
+    <!-- <TicketHome /> -->
+     <Hero />
+     <About />
   </div>
 </template>

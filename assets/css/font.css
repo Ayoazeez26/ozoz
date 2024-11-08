@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Recoleta";
+  src: url("../font/Recoleta-Medium.eot");
+  src: local("../font/Recoleta Medium"), local("../font/Recoleta-Medium"),
+    url("../font/Recoleta-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../font/Recoleta-Medium.woff2") format("woff2"),
+    url("../font/Recoleta-Medium.woff") format("woff"),
+    url("../font/Recoleta-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../font/Recoleta-Thin.eot");
+  src: local("../font/Recoleta Thin"), local("../font/Recoleta-Thin"),
+    url("../font/Recoleta-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../font/Recoleta-Thin.woff2") format("woff2"),
+    url("../font/Recoleta-Thin.woff") format("woff"),
+    url("../font/Recoleta-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../font/Recoleta-SemiBold.eot");
+  src: local("../font/Recoleta SemiBold"), local("../font/Recoleta-SemiBold"),
+    url("../font/Recoleta-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Recoleta-SemiBold.woff2") format("woff2"),
+    url("../font/Recoleta-SemiBold.woff") format("woff"),
+    url("../font/Recoleta-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../font/Recoleta-Regular.eot");
+  src: local("../font/Recoleta Regular"), local("../font/Recoleta-Regular"),
+    url("../font/Recoleta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/Recoleta-Regular.woff2") format("woff2"),
+    url("../font/Recoleta-Regular.woff") format("woff"),
+    url("../font/Recoleta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../font/Recoleta-Bold.eot");
+  src: local("../font/Recoleta Bold"), local("../font/Recoleta-Bold"),
+    url("../font/Recoleta-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Recoleta-Bold.woff2") format("woff2"),
+    url("../font/Recoleta-Bold.woff") format("woff"),
+    url("../font/Recoleta-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../font/Recoleta-Black.eot");
+  src: local("../font/Recoleta Black"), local("../font/Recoleta-Black"),
+    url("../font/Recoleta-Black.eot?#iefix") format("embedded-opentype"),
+    url("../font/Recoleta-Black.woff2") format("woff2"),
+    url("../font/Recoleta-Black.woff") format("woff"),
+    url("../font/Recoleta-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../font/Recoleta-Light.eot");
+  src: local("../font/Recoleta Light"), local("../font/Recoleta-Light"),
+    url("../font/Recoleta-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/Recoleta-Light.woff2") format("woff2"),
+    url("../font/Recoleta-Light.woff") format("woff"),
+    url("../font/Recoleta-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('../font/OpenSauceTwo-Bold.woff2') format('woff2'),
+        url('../font/OpenSauceTwo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('../font/OpenSauceTwo-ExtraBold.woff2') format('woff2'),
+        url('../font/OpenSauceTwo-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('../font/OpenSauceTwo-Black.woff2') format('woff2'),
+        url('../font/OpenSauceTwo-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('../font/OpenSauceTwo-SemiBoldItalic.woff2') format('woff2'),
+        url('../font/OpenSauceTwo-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('../font/OpenSauceTwo-Medium.woff2') format('woff2'),
+        url('../font/OpenSauceTwo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('../font/OpenSauceTwo-Light.woff2') format('woff2'),
+        url('../font/OpenSauceTwo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Two';
+    src: url('../font/OpenSauceTwo-Regular.woff2') format('woff2'),
+        url('../font/OpenSauceTwo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

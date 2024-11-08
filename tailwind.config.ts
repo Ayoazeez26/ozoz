@@ -5,16 +5,22 @@ export default <Partial<Config>>{
     extend: {
       colors: {
         grey: "#2B2B2B",
-        brown: "#A35E05",
+        brown: "#A86563",
+        blue: "#194185",
         lime: "#BFF3CF",
         green: "#184F2C",
+        red: "#B4181A",
         "green-2": "#1B7339",
-        "grey-2": "#C4C4C4",
+        "grey-2": "#F5FAFF",
         "grey-3": "#757575",
       },
       backgroundImage: {
         "hero-bg": "url(/img/home-img.webp)",
         "bero-bg-mob": "url(/img/home-mob-img.webp)",
+      },
+      fontFamily: {
+        recoleta: ["'Recoleta'", "sans-serif"],
+        sauce: ["'OpenSauceTwo'", "sans-serif"],
       },
     },
   },
