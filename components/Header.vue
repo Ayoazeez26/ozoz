@@ -1,28 +1,24 @@
 <script setup lang="ts">
+const navigation = ref([
+  { name: "About (My Story)", href: "#" },
+  { name: "My Book", href: "#" },
+  { name: "Tours & Events", href: "#" },
+  { name: "My Nigerian Cookshelf", href: "#" },
+  { name: "A-Z Glossary", href: "#" },
+]);
 
-  const navigation = ref([
-    { name: "About (My Story)", href: "#" },
-    { name: "My Book", href: "#" },
-    { name: "Tours & Events", href: "#" },
-    { name: "My Nigerian Cookshelf", href: "#" },
-    { name: "A-Z Glossary", href: "#" },
-  ]);
-
-  const mobileMenuOpen = ref(false);
+const mobileMenuOpen = ref(false);
 </script>
 
 <template>
-  <header class="bg-transparent fixed top-0 left-0 right-0">
+  <header class="bg-transparent fixed top-0 left-0 right-0 z-10">
     <nav
       class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
       aria-label="Global">
       <div class="flex lg:flex-1">
         <nuxt-link to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Ozoz Sokoh</span>
-          <img
-            class="w-[173px]"
-            src="/img/logo.png"
-            alt="logo" />
+          <img class="w-[173px]" src="/img/logo.png" alt="logo" />
         </nuxt-link>
       </div>
       <div class="hidden lg:flex lg:gap-x-7">
@@ -35,10 +31,9 @@
         >
       </div>
       <div class="flex-1 items-center hidden md:flex justify-end gap-x-6">
-        
         <nuxt-link
           to="#"
-          class="rounded-2xl bg-blue px-10 py-4text-sm font-medium text-grey-2 shadow-sm hover:bg-blue/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:blue"
+          class="rounded-2xl bg-blue px-10 py-4 text-sm font-medium text-grey-2 shadow-sm hover:bg-blue/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:blue"
           >Contact</nuxt-link
         >
       </div>
@@ -48,7 +43,10 @@
           class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           @click="mobileMenuOpen = true">
           <span class="sr-only">Open main menu</span>
-          <Icon name="icon-park-outline:hamburger-button" size="20" />
+          <Icon
+            name="icon-park-outline:hamburger-button"
+            size="20"
+            aria-hidden="true" />
         </button>
       </div>
     </nav>
@@ -59,25 +57,21 @@
       <div class="fixed inset-0 z-10" />
       <HeadlessDialogPanel
         class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center gap-x-6">
+        <div class="flex items-center justify-between gap-x-6">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Ozoz Sokoh</span>
-          <img
-            class="w-[173px]"
-            src="/img/logo.png"
-            alt="logo" />
+            <img class="w-[173px]" src="/img/logo.png" alt="logo" />
           </a>
-          <nuxt-link
-          to="#"
-          class="rounded-2xl bg-blue px-10 py-4 text-sm font-semibold text-grey-2 shadow-sm hover:bg-blue/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:blue"
-          >Contact</nuxt-link
-        >
+
           <button
             type="button"
             class="-m-2.5 rounded-md p-2.5 text-gray-700"
             @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
-            <Icon name="material-symbols:close-rounded" size="6" aria-hidden="true" />
+            <Icon
+              name="material-symbols:close-rounded"
+              size="20"
+              aria-hidden="true" />
           </button>
         </div>
         <div class="mt-6 flow-root">
@@ -92,10 +86,10 @@
               >
             </div>
             <div class="py-6">
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >Log in</a
+              <nuxt-link
+                to="#"
+                class="rounded-2xl bg-blue px-10 py-4 text-sm font-semibold text-grey-2 shadow-sm hover:bg-blue/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:blue"
+                >Contact</nuxt-link
               >
             </div>
           </div>
@@ -104,5 +98,3 @@
     </HeadlessDialog>
   </header>
 </template>
-
-

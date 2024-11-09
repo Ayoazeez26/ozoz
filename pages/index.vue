@@ -4,5 +4,6 @@
     <!-- <TicketHome /> -->
      <Hero />
      <About />
+     <Showcase />
   </div>
 </template>

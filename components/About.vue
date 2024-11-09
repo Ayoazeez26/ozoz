@@ -2,7 +2,7 @@
 
 <template>
   <div class="bg-white">
-    <div class="relative isolate pt-14">
+    <div class="relative isolate">
       <svg
         class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true">
@@ -29,10 +29,10 @@
           fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
       </svg>
       <div
-        class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 xl:px-0 lg:py-40">
+        class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center justify-between lg:gap-x-10 lg:px-8 xl:px-0 lg:py-20">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <h2
-            class="mt-10  text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
+            class="mt-10 text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
             Ozoz Sokoh
           </h2>
           <p
@@ -44,16 +44,28 @@
           <div class="mt-10 flex items-center gap-x-6">
             <nuxt-link
               to="#"
-              class="rounded-2xl  bg-transparent border border-blue px-10 py-4 text-sm font-medium text-blue shadow-sm hover:bg-blue hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >About me</nuxt-link
-            >
+              class="rounded-2xl bg-transparent border border-blue px-10 py-4 text-sm font-medium text-blue shadow-sm hover:bg-blue hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              About me
+            </nuxt-link>
           </div>
         </div>
-        <div class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
-          <img src="/img/ozoz-one.webp" alt="ozoz first image">
-          <img src="/img/white-bowl.webp" alt="white bowl of soup" class="absolute top-20 -left-24">
+        <div
+          class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow max-w-fit">
+          <img src="/img/ozoz-one.webp" alt="ozoz first image" />
+          <img
+            src="/img/white-bowl.webp"
+            alt="white bowl of soup"
+            class="absolute top-20 -left-24" />
         </div>
       </div>
+    </div>
+    <div
+      class="mx-auto max-w-7xl px-6 py-24 sm:py-32 flex flex-col gap-16 lg:items-center justify-between lg:gap-x-10 lg:px-8 xl:px-0 lg:py-20">
+      <h2
+        class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
+        My Journey
+      </h2>
+      <Slider />
     </div>
   </div>
 </template>

@@ -970,7 +970,7 @@
     unimport "^3.12.0"
     untyped "^1.4.2"
 
-"@nuxt/kit@^3.11.2":
+"@nuxt/kit@^3.11.2", "@nuxt/kit@^3.12.4":
   version "3.14.159"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.14.159.tgz#1b856bd5ed75c97e425a0b57dacfe476990a6863"
   integrity sha512-ZqxsCI1NKV/gjfEUUZjMcr82sg0MKYZOuyB6bu9QY5Zr7NGpfIZY/z5Z822AKTmFxKGChnuz9M0UaS4ze6p42g==
@@ -3952,6 +3952,11 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+keen-slider@^6.8.6:
+  version "6.8.6"
+  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-6.8.6.tgz#17bb7b219860f291a5ea5fde4496b737bf407a83"
+  integrity sha512-dcEQ7GDBpCjUQA8XZeWh3oBBLLmyn8aoeIQFGL/NTVkoEOsmlnXqA4QykUm/SncolAZYGsEk/PfUhLZ7mwMM2w==
+
 keygrip@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/keygrip/-/keygrip-1.1.0.tgz#871b1681d5e159c62a445b0c74b615e0917e7226"
@@ -4694,6 +4699,14 @@ nuxt-headlessui@^1.2.0:
     "@headlessui/vue" "^1.7.18"
     "@nuxt/kit" "^3.11.2"
     pathe "^1.1.2"
+
+nuxt-keen-slider@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-keen-slider/-/nuxt-keen-slider-1.1.0.tgz#34b78f9652ce2c28c9fe2eb2257da7cb2af221b6"
+  integrity sha512-XAKEei5//hZmsU7V0ZShrSFYydOQ/LOGFgLZf7yumSv598g95ehmnXcpMtXXV7iYylxAC4+i+eKkUxqW9hXMLA==
+  dependencies:
+    "@nuxt/kit" "^3.12.4"
+    keen-slider "^6.8.6"
 
 nuxt@^3.13.0:
   version "3.13.2"
