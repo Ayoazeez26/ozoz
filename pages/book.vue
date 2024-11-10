@@ -1,9 +1,7 @@
 <template>
   <div>
     <Header />
-     <HomeHero />
-     <HomeAbout />
-     <Showcase />
+     <BookHero />
      <Newsletter />
      <Footer />
   </div>

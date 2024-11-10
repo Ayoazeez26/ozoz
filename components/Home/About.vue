@@ -43,7 +43,7 @@
           </p>
           <div class="mt-10 flex items-center gap-x-6">
             <nuxt-link
-              to="#"
+              to="/about"
               class="rounded-2xl bg-transparent border border-blue px-10 py-4 text-sm font-medium text-blue shadow-sm hover:bg-blue hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
               About me
             </nuxt-link>
@@ -65,7 +65,7 @@
         class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
         My Journey
       </h2>
-      <Slider />
+      <HomeSlider />
     </div>
   </div>
 </template>

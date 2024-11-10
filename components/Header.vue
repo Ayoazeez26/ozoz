@@ -1,17 +1,34 @@
 <script setup lang="ts">
 const navigation = ref([
-  { name: "About (My Story)", href: "#" },
-  { name: "My Book", href: "#" },
-  { name: "Tours & Events", href: "#" },
-  { name: "My Nigerian Cookshelf", href: "#" },
-  { name: "A-Z Glossary", href: "#" },
+  { name: "About (My Story)", to: "/about" },
+  { name: "My Book", to: "book" },
+  { name: "Tours & Events", to: "events" },
+  { name: "My Nigerian Cookshelf", to: "shelf" },
+  { name: "A-Z Glossary", to: "glossary" },
 ]);
 
 const mobileMenuOpen = ref(false);
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
-  <header class="bg-transparent fixed top-0 left-0 right-0 z-10">
+  <header
+    :class="[
+      'fixed top-0 left-0 right-0 z-10 transition-all duration-300',
+      isScrolled ? 'bg-[#F9EDDF]' : 'bg-transparent',
+    ]">
     <nav
       class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
       aria-label="Global">
@@ -22,13 +39,13 @@ const mobileMenuOpen = ref(false);
         </nuxt-link>
       </div>
       <div class="hidden lg:flex lg:gap-x-7">
-        <a
+        <nuxt-link
           v-for="item in navigation"
           :key="item.name"
-          :href="item.href"
+          :to="item.to"
           class="text-brown"
-          >{{ item.name }}</a
-        >
+          >{{ item.name }}
+        </nuxt-link>
       </div>
       <div class="flex-1 items-center hidden md:flex justify-end gap-x-6">
         <nuxt-link
@@ -58,10 +75,10 @@ const mobileMenuOpen = ref(false);
       <HeadlessDialogPanel
         class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between gap-x-6">
-          <a href="#" class="-m-1.5 p-1.5">
+          <nuxt-link to="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Ozoz Sokoh</span>
             <img class="w-[173px]" src="/img/logo.png" alt="logo" />
-          </a>
+          </nuxt-link>
 
           <button
             type="button"
@@ -77,13 +94,13 @@ const mobileMenuOpen = ref(false);
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a
+              <nuxt-link
                 v-for="item in navigation"
                 :key="item.name"
-                :href="item.href"
+                :to="item.to"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >{{ item.name }}</a
-              >
+                >{{ item.name }}
+              </nuxt-link>
             </div>
             <div class="py-6">
               <nuxt-link

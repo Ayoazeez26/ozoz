@@ -1,8 +1,8 @@
 <template>
   <div>
     <Header />
-     <HomeHero />
-     <HomeAbout />
+     <AboutHero />
+     <AboutStory />
      <Showcase />
      <Newsletter />
      <Footer />
