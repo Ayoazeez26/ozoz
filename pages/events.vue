@@ -1,5 +1,6 @@
 <template>
   <div>
-    <CheckoutPrice />
+    <Header />
+    <ComingSoon />
   </div>
 </template>

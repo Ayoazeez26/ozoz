@@ -11,3 +11,12 @@
     @apply font-sauce;
   }
 }
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+.rotate-z {
+  transform: rotateY(180deg);
+  transform: rotateZ(279deg);
+}

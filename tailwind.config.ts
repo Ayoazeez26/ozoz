@@ -14,7 +14,10 @@ export default <Partial<Config>>{
         "grey-2": "#F5FAFF",
         "grey-3": "#E5E7EB",
         "grey-4": "#FFFBF5",
+        "grey-5": "#E0E0E0",
         "blue-2": "#102A56",
+        "blue-3": "#2A2A2A",
+        "red-2": "#E00002",
       },
       backgroundImage: {
         "hero-bg": "url(/img/home-img.webp)",
@@ -26,4 +29,7 @@ export default <Partial<Config>>{
       },
     },
   },
+  plugins: [
+    require("@tailwindcss/forms"),
+  ],
 };

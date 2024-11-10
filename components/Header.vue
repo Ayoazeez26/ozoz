@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const navigation = ref([
   { name: "About (My Story)", to: "/about" },
-  { name: "My Book", to: "book" },
-  { name: "Tours & Events", to: "events" },
-  { name: "My Nigerian Cookshelf", to: "shelf" },
-  { name: "A-Z Glossary", to: "glossary" },
+  { name: "My Book", to: "/book" },
+  { name: "Tours & Events", to: "/events" },
+  { name: "My Nigerian Cookshelf", to: "/shelf" },
+  { name: "A-Z Glossary", to: "/glossary" },
 ]);
 
 const mobileMenuOpen = ref(false);
@@ -13,11 +13,11 @@ const isScrolled = ref(false);
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
 };
-
+const route = useRoute();
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
-
+console.log(route.name)
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
@@ -38,18 +38,18 @@ onUnmounted(() => {
           <img class="w-[173px]" src="/img/logo.png" alt="logo" />
         </nuxt-link>
       </div>
-      <div class="hidden lg:flex lg:gap-x-7">
+      <div class="hidden lg:flex lg:gap-x-3">
         <nuxt-link
           v-for="item in navigation"
           :key="item.name"
           :to="item.to"
-          class="text-brown"
+          :class="['p-2 pt-0 font-sauce', route.path === item.to ? 'border-b border-b-blue text-blue' : 'text-brown']"
           >{{ item.name }}
         </nuxt-link>
       </div>
       <div class="flex-1 items-center hidden md:flex justify-end gap-x-6">
         <nuxt-link
-          to="#"
+          to="/contact"
           class="rounded-2xl bg-blue px-10 py-4 text-sm font-medium text-grey-2 shadow-sm hover:bg-blue/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:blue"
           >Contact</nuxt-link
         >
@@ -104,7 +104,7 @@ onUnmounted(() => {
             </div>
             <div class="py-6">
               <nuxt-link
-                to="#"
+                to="/contact"
                 class="rounded-2xl bg-blue px-10 py-4 text-sm font-semibold text-grey-2 shadow-sm hover:bg-blue/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:blue"
                 >Contact</nuxt-link
               >

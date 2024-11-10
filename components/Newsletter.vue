@@ -1,5 +1,17 @@
 <template>
-  <div class="bg-[#F9EDDF] py-16 sm:py-24">
+  <div class="bg-[#F9EDDF] py-16 sm:py-24 relative">
+    <img
+      src="/svg/bg-lines.svg"
+      alt="lines"
+      class="absolute -top-40 left-0 right-0 z-0" />
+    <img
+      src="/svg/branch.svg"
+      alt="branch image"
+      class="absolute hidden md:block -top-4 right-3 rotate-[105deg] z-0" />
+    <img
+      src="/svg/branch.svg"
+      alt="branch image"
+      class="absolute hidden md:block bottom-0 left-0 rotate-[279deg] z-0" />
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div
         class="relative overflow-hidden sm:rounded-3xl">

@@ -3,10 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["@/assets/css/font.css", "@/assets/css/global.css"],
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/icon", "nuxt-headlessui", "nuxt-keen-slider"],
-  googleFonts: {
-    families: {
-      "Open+Sans": "400..800",
-    },
-  },
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/icon",
+    "nuxt-headlessui",
+    "nuxt-swiper"
+  ],
 });

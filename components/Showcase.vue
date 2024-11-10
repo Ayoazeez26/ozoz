@@ -3,6 +3,15 @@
 <template>
   <div class="">
     <div class="relative isolate flex flex-col items-center pt-14">
+      <img
+        src="/svg/bg-lines.svg"
+        alt="lines"
+        class="absolute -top-40 left-0 right-0 z-[1]" />
+
+      <img
+        src="/svg/branch.svg"
+        alt="branch image"
+        class="absolute hidden md:block -top-4 right-3 rotate-[105deg] z-[1]" />
       <div class="bg-[#F9EDDF] absolute top-0 z-0 w-full h-[532px]" />
       <div
         class="mx-auto w-full max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 xl:px-0 lg:pt-20 lg:pb-40 relative z-[1]">
@@ -69,10 +78,10 @@
                   class="w-full max-w-[280px]" />
                 <div class="flex flex-col gap-3 pr-6">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-red font-medium text-[28px] text-ellipsis line-clamp-1">
+                    <h3
+                      class="text-red font-medium text-[28px] text-ellipsis line-clamp-1">
                       The Museum (and Atlas) of Global Foodways
                     </h3>
-                    
                   </div>
                   <p
                     class="text-brown text-lg/[140%] text-ellipsis line-clamp-2">
