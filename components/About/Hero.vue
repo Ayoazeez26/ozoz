@@ -22,15 +22,15 @@
         alt="branch image"
         class="absolute hidden md:block top-[600px] right-[300px] rotate-[279deg] z-0" />
       <div
-        class="mx-auto max-w-7xl w-full px-6 py-24 sm:py-32 flex flex-col items-center xl:px-0 lg:py-40 relative z-[1]">
+        class="mx-auto max-w-7xl w-full px-6 py-14 sm:py-32 flex flex-col items-center xl:px-0 lg:py-40 relative z-[1]">
         <div
-          class="mx-auto flex w-full justify-between items-start lg:mx-0 lg:flex-auto">
+          class="mx-auto flex flex-col md:flex-row gap-[36px] md:gap-0 w-full justify-between items-start lg:mx-0 lg:flex-auto">
           <h1
-            class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px] max-w-[624px]">
-            About <br />Ozoz Sokoh
+            class="text-pretty text-6xl/[120%] font-medium tracking-tight text-red sm:text-7xl md:text-[112px] max-w-[624px]">
+            About <br class="hidden md:block" />Ozoz Sokoh
           </h1>
           <div class="relative max-w-[620px]">
-            <p class="text-pretty text-lg text-brown sm:text-lg/[140%]">
+            <p class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
               Ozoz Sokoh is a food explorer, educator, budding curator, and
               Traveler By Plate, for whom "Food Is More Than Eating". In 2009,
               she began journaling about food on her blog, Kitchen Butterfly. In
@@ -41,7 +41,7 @@
               cultural identity, reclamation of food systems and importantly,
               the joy of eating.
             </p>
-            <p class="mt-2 text-pretty text-lg text-brown sm:text-lg/[140%]">
+            <p class="mt-2 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
               Her research and documentation explore the roots of Nigerian and
               West African cuisine, the impact of West African intellectual
               contributions to global development from the American South,
@@ -54,15 +54,15 @@
           <img
             src="/img/ozoz-thumb1.webp"
             alt="ozoz sokoh first potrait"
-            class="max-w-[264px] mt-20" />
+            class="max-w-[71px] md:max-w-[264px] mt-5 md:mt-20" />
           <img
             src="/img/ozoz-main.webp"
             alt="ozoz sokoh large potrait"
-            class="max-w-[608px]" />
+            class="max-w-[162px] md:max-w-[608px]" />
           <img
             src="/img/ozoz-thumb2.webp"
             alt="ozoz sokoh third potrait"
-            class="max-w-[264px] mt-[120px]" />
+            class="max-w-[71px] md:max-w-[264px] mt-8 md:mt-[120px]" />
         </div>
       </div>
     </div>

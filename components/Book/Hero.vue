@@ -17,19 +17,23 @@
         alt="branch image"
         class="absolute hidden md:block top-[550px] right-80 rotate-180 z-0" />
       <div
-        class="mx-auto w-full max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:justify-between items-start lg:gap-x-10 xl:px-0 lg:py-40 relative z-[1]">
+        class="mx-auto w-full max-w-7xl px-4 md:px-6 py-24 sm:py-32 lg:flex lg:justify-between items-start lg:gap-x-10 xl:px-0 lg:py-40 relative z-[1]">
         <div class="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
           <img
             src="/img/chop-chop.webp"
             alt="chop book"
-            class="max-w-[521px]" />
+            class="max-w-[521px] hidden md:block" />
         </div>
         <div class="mx-auto max-w-[695px] lg:mx-0 gap-4 flex flex-col lg:flex-auto">
           <h1
-            class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-[64px]/[120%] lg:pr-10">
+            class="text-pretty text-6xl/[120%] font-medium tracking-tight text-red sm:text-[64px]/[120%] lg:pr-10 mb-12 md:mb-0">
             Chop Chop: Cooking the Food of Nigeria
           </h1>
-          <p class="text-pretty text-lg text-brown sm:text-lg/[140%]">
+          <img
+            src="/img/chop-chop.webp"
+            alt="chop book"
+            class="max-w-[521px] md:hidden w-full" />
+          <p class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
             Chop Chop celebrates the vibrant, diverse world of Nigerian cuisine,
             featuring dishes like spicy beef suya, rich egusi stew, and jollof
             rice, as well as puff puff, hibiscus drinks, and more. With

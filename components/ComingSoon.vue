@@ -22,24 +22,24 @@
       src="/svg/branch.svg"
       alt="branch image"
       class="absolute hidden md:block bottom-0 right-0 rotate-180 z-0" />
-    <div class="flex flex-col text-center items-center">
+    <div class="flex flex-col text-center items-center px-4 md:px-0">
       <h2 class="text-red text-[60px]/[120%] font-semibold tracking-[-0.9px]">
         Coming Soon!
       </h2>
-      <p class="text-brown text-xl/[140%] tracking-[-0.3px] mt-6 mb-10">
-        We're working tirelessly and we'll soon allow you <br />
+      <p class="text-brown text-lg/[140%] md:text-xl/[140%] tracking-[-0.3px] mt-6 mb-10 w-full max-w-[343px]">
+        We're working tirelessly and we'll soon allow you <br class="hidden md:block" />
         to come tour with us!
       </p>
-      <div class="flex gap-3">
+      <div class="flex flex-col md:flex-row w-full md:w-auto gap-3">
         <nuxt-link
           to="/"
-          class="rounded-2xl bg-blue border border-blue p-6 text-sm font-medium text-white shadow-sm hover:bg-white hover:text-blue focus-visible:outline focus-visible:outline-2 flex gap-2 items-center focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="rounded-2xl bg-blue border border-blue p-6 text-sm font-medium text-white shadow-sm hover:bg-white hover:text-blue focus-visible:outline focus-visible:outline-2 flex gap-2 items-center focus-visible:outline-offset-2 focus-visible:outline-indigo-600 justify-center"
           ><Icon name="material-symbols:arrow-left-alt" size="20" /> Go
           home</nuxt-link
         >
         <nuxt-link
           to="/"
-          class="rounded-2xl bg-transparent border border-grey-5 p-6 text-sm font-medium text-blue-3 shadow-sm hover:bg-blue-3 hover:text-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="rounded-2xl bg-transparent border border-grey-5 p-6 text-sm font-medium text-blue-3 shadow-sm hover:bg-blue-3 hover:text-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
           >Go back</nuxt-link
         >
       </div>

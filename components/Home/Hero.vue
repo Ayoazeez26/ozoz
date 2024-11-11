@@ -2,7 +2,7 @@
 
 <template>
   <div class="bg-[#F9EDDF] scroll-smooth">
-    <div class="relative isolate flex flex-col items-center pt-14">
+    <div class="relative isolate flex flex-col items-center md:pt-14">
       <img
         src="/svg/bg-lines.svg"
         alt="lines"
@@ -17,19 +17,19 @@
         alt="branch image"
         class="absolute bottom-0 right-40 rotate-180 z-0" />
       <div
-        class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 xl:px-0 lg:py-40">
+        class="mx-auto w-full max-w-7xl px-4 md:px-6 py-20 sm:py-32 lg:flex flex-wrap lg:items-center lg:gap-x-10 xl:px-0 lg:py-40">
         <div class="mx-auto max-w-xl lg:mx-0 lg:flex-auto relative z-[1]">
           <h1
-            class="mt-10 text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
+            class="mt-10 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
             Chop Chop
           </h1>
-          <div class="relative pl-40">
+          <div class="relative pl-9 lg:pl-40">
             <img
               src="/img/bowl.webp"
               alt="bowl of soup"
-              class="absolute -top-5 -left-20" />
+              class="absolute -top-5 -left-20 hidden lg:block" />
             <p
-              class="mt-8 text-pretty text-lg text-brown sm:text-lg/[140%] max-w-[408px]">
+              class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%] max-w-[408px]">
               Immerse yourself in a world of captivating stories and profound
               insights. Ozoz Sokoh's newest book is a journey you won't want to
               miss. Save 30% when you preorder.
@@ -43,41 +43,45 @@
             </div>
           </div>
         </div>
-        <div class="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
+        <div class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
           <img src="/img/chop-book.webp" alt="chop book" />
+          <img
+              src="/img/bowl.webp"
+              alt="bowl of soup"
+              class="absolute lg:hidden -top-40 -right-20" />
         </div>
-        <div class="flex flex-col gap-7 text-blue">
-          <nuxt-link to="#" class="flex items-end gap-3"
-            >Bookshop.org (US)<Icon
-              name="material-symbols:arrow-outward"
-              size="20"
-          /></nuxt-link>
-          <nuxt-link to="#" class="flex items-end gap-3"
-            >Shop Local (Canada)<Icon
-              name="material-symbols:arrow-outward"
-              size="20"
-          /></nuxt-link>
-          <nuxt-link to="#" class="flex items-end gap-3"
-            >Indigo (Canada)<Icon
-              name="material-symbols:arrow-outward"
-              size="20"
-          /></nuxt-link>
-          <nuxt-link to="#" class="flex items-end gap-3"
-            >Amazon (US)<Icon name="material-symbols:arrow-outward" size="20"
-          /></nuxt-link>
-          <nuxt-link to="#" class="flex items-end gap-3"
-            >Amazon (UK)<Icon name="material-symbols:arrow-outward" size="20"
-          /></nuxt-link>
-          <nuxt-link to="#" class="flex items-end gap-3"
-            >Booktopia (Australia)<Icon
-              name="material-symbols:arrow-outward"
-              size="20"
-          /></nuxt-link>
+        <div class="flex flex-col gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue">
+          <h3 class="text-2xl text-red">United States</h3>
+          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+            HBG
+            <Icon name="material-symbols:arrow-outward" size="20" />
+          </nuxt-link>
+          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+            Amazon
+            <Icon name="material-symbols:arrow-outward" size="20" />
+          </nuxt-link>
+          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+            Barnes & Boble
+            <Icon name="material-symbols:arrow-outward" size="20" />
+          </nuxt-link>
+          <h3 class="text-2xl text-red">Canada</h3>
+          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+            Indigo
+            <Icon name="material-symbols:arrow-outward" size="20" />
+          </nuxt-link>
+          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+            Amazon.ca
+            <Icon name="material-symbols:arrow-outward" size="20" />
+          </nuxt-link>
+          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+            Shop Local
+            <Icon name="material-symbols:arrow-outward" size="20" />
+          </nuxt-link>
         </div>
       </div>
       <a
         href="#about"
-        class="text-blue flex pb-8 font-medium gap-3 items-center"
+        class="text-blue hidden md:flex pb-8 font-medium gap-3 items-center"
         >SCROLL DOWN <Icon name="solar:arrow-down-linear" size="20"
       /></a>
       <div id="about" />
@@ -85,6 +89,4 @@
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

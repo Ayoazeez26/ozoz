@@ -1,6 +1,6 @@
 <template>
-  <div class="overflow-hidden">
-     <BookHero />
+  <div class="">
+     <Glossary />
      <Newsletter />
   </div>
 </template>

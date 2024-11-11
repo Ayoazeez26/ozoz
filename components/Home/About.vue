@@ -17,22 +17,22 @@
         alt="branch image"
         class="absolute hidden md:block top-[650px] right-3 rotate-[105deg] z-0" />
       <div
-        class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center justify-between lg:gap-x-10 lg:px-8 xl:px-0 lg:py-20 relative z-[1]">
+        class="mx-auto max-w-7xl px-4 md:px-6 py-16 sm:py-32 lg:flex lg:items-center justify-between lg:gap-x-10 lg:px-8 xl:px-0 lg:py-20 relative z-[1]">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <h2
-            class="mt-10 text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
+            class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
             Ozoz Sokoh
           </h2>
           <p
-            class="mt-8 text-pretty text-lg font-medium text-brown sm:text-xl/8">
+            class="mt-4 md:mt-8 text-pretty text-base/[140%] font-medium text-brown sm:text-xl/8">
             Ozoz Sokoh is a food explorer and traveller by plate, educator and
             researcher exploring Nigeria and West African diaspora and Global
             Foodways. She believes that Food is More than Eating.
           </p>
-          <div class="mt-10 flex items-center gap-x-6">
+          <div class="mt-10 flex items-center gap-x-6 w-full md:justify-start md:max-w-fit">
             <nuxt-link
               to="/about"
-              class="rounded-2xl bg-transparent border border-blue px-10 py-4 text-sm font-medium text-blue shadow-sm hover:bg-blue hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              class="rounded-2xl bg-transparent border border-blue px-10 py-4 text-sm font-medium text-blue shadow-sm hover:bg-blue hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full flex items-center justify-center text-center">
               About me
             </nuxt-link>
           </div>
@@ -43,18 +43,18 @@
           <img
             src="/img/white-bowl.webp"
             alt="white bowl of soup"
-            class="absolute top-20 -left-24" />
+            class="absolute top-0 md:top-20 -left-5 md:-left-24 w-[109px] md:w-auto" />
         </div>
       </div>
     </div>
     <div
-      class="mx-auto max-w-7xl px-6 py-24 sm:py-32 flex flex-col gap-16 lg:items-center justify-between lg:gap-x-10 lg:px-8 xl:px-0 lg:py-20 relative">
+      class="mx-auto max-w-7xl px-6 py-16 sm:py-32 flex flex-col gap-16 lg:items-center justify-between lg:gap-x-10 lg:px-8 xl:px-0 lg:py-20 relative">
       <img
         src="/svg/bg-lines.svg"
         alt="lines"
         class="absolute -top-40 left-0 right-0 z-0" />
       <h2
-        class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
+        class="text-pretty text-5xl text-center font-medium tracking-tight text-red sm:text-7xl">
         My Journey
       </h2>
       <HomeSlider />
