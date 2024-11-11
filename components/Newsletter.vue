@@ -35,7 +35,7 @@
             placeholder="Enter your email address" />
           <button
             type="submit"
-            class="flex-none uppercase rounded-r-2xl bg-blue -ml-4 p-6 text-white hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            class="flex-none uppercase rounded-r-2xl bg-blue -ml-4 p-6 text-white hover:bg-[#102A56] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             Subscribe
           </button>
         </form>
