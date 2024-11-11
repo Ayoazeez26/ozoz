@@ -32,9 +32,6 @@ const selectedLetter = ref("A");
 
 const goToLetter = (letter: { name: string; to: string }) => {
   selectedLetter.value = letter.name;
-  // const link = document.createElement("a");
-  // link.href = letter.to;
-  // link.click();
   const element = document.querySelector(letter.to);
   const offset = 210; // Adjust this value to match the combined height of the navbar and search bar
 

@@ -1,4 +1,19 @@
-<script setup></script>
+<script setup lang="ts">
+const about = ref(null);
+const goToAbout = () => {
+  // const element = document.querySelector(letter.to);
+  const offset = 210; // Adjust this value to match the combined height of the navbar and search bar
+
+  if (about.value) {
+    const topPosition =
+      about.value.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({
+      top: topPosition,
+      behavior: "smooth",
+    });
+  }
+};
+</script>
 
 <template>
   <div class="bg-brown-3 scroll-smooth">
@@ -80,12 +95,12 @@
           </nuxt-link>
         </div>
       </div>
-      <a
-        href="#about"
-        class="text-blue hidden md:flex pb-8 font-medium gap-3 relative z-[1] items-center"
+      <button
+        @click="goToAbout"
+        class="text-blue hidden md:flex pb-8 font-medium gap-3 relative z-[1] cursor-pointer items-center"
         >SCROLL DOWN <Icon name="solar:arrow-down-linear" size="20"
-      /></a>
-      <div id="about" />
+      /></button>
+      <div ref="about" />
     </div>
   </div>
 </template>

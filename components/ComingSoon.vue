@@ -23,11 +23,11 @@
       alt="branch image"
       class="absolute hidden md:block bottom-0 right-0 rotate-180 z-0" />
     <div class="flex flex-col text-center items-center px-4 md:px-0">
-      <h2 class="text-red text-[60px]/[120%] font-semibold tracking-[-0.9px]">
+      <h2 class="text-red-2 text-[60px]/[120%] font-semibold tracking-[-0.9px]">
         Coming Soon!
       </h2>
-      <p class="text-brown text-lg/[140%] md:text-xl/[140%] tracking-[-0.3px] mt-6 mb-10 w-full max-w-[343px]">
-        We're working tirelessly and we'll soon allow you <br class="hidden md:block" />
+      <p class="text-brown text-lg/[140%] md:text-xl/[140%] tracking-[-0.3px] mt-6 mb-10 w-full max-w-[423px]">
+        We're working tirelessly and we'll soon allow you 
         to come tour with us!
       </p>
       <div class="flex flex-col md:flex-row w-full md:w-auto gap-3">
