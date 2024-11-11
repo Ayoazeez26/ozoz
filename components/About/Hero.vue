@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="bg-[#F9EDDF]">
+  <div class="bg-brown-3">
     <div class="relative isolate flex flex-col items-center pt-14">
       <img
         src="/svg/bg-lines.svg"
@@ -30,7 +30,8 @@
             About <br class="hidden md:block" />Ozoz Sokoh
           </h1>
           <div class="relative max-w-[620px]">
-            <p class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
+            <p
+              class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
               Ozoz Sokoh is a food explorer, educator, budding curator, and
               Traveler By Plate, for whom "Food Is More Than Eating". In 2009,
               she began journaling about food on her blog, Kitchen Butterfly. In
@@ -41,7 +42,8 @@
               cultural identity, reclamation of food systems and importantly,
               the joy of eating.
             </p>
-            <p class="mt-2 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
+            <p
+              class="mt-2 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
               Her research and documentation explore the roots of Nigerian and
               West African cuisine, the impact of West African intellectual
               contributions to global development from the American South,

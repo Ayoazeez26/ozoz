@@ -12,7 +12,7 @@
         src="/svg/branch.svg"
         alt="branch image"
         class="absolute hidden md:block -top-4 right-3 rotate-[105deg] z-[1]" />
-      <div class="bg-[#F9EDDF] absolute top-0 z-0 w-full h-[532px]" />
+      <div class="bg-brown-3 absolute top-0 z-0 w-full h-[532px]" />
       <div
         class="mx-auto w-full max-w-7xl px-6 py-14 sm:py-32 lg:flex lg:items-center lg:gap-x-10 xl:px-0 lg:pt-20 lg:pb-40 relative z-[1]">
         <div class="mx-auto w-full lg:mx-0 lg:flex-auto">
@@ -33,7 +33,8 @@
                     Kitchen Butterfly
                   </h3>
                   <nuxt-link
-                    to="#"
+                    to="https://www.kitchenbutterfly.com/"
+                    target="_blank"
                     class="text-white rounded-full flex items-center justify-center p-4 bg-blue"
                     ><Icon name="material-symbols:arrow-outward" size="20"
                   /></nuxt-link>
@@ -58,12 +59,14 @@
                   class="w-full md:hidden" />
                 <div
                   class="flex flex-col gap-3 px-4 md:px-0 text-center md:text-left pb-6 md:pb-0 md:pr-6">
-                  <div class="flex gap-4 items-center justify-center md:justify-start">
+                  <div
+                    class="flex gap-4 items-center justify-center md:justify-start">
                     <h3 class="text-red font-medium text-xl md:text-[28px]">
                       Feast Afrique
                     </h3>
                     <nuxt-link
-                      to="#"
+                      to="https://www.feastafrique.com/"
+                      target="_blank"
                       class="text-white rounded-full flex items-center justify-center p-4 bg-blue"
                       ><Icon name="material-symbols:arrow-outward" size="20"
                     /></nuxt-link>
@@ -85,8 +88,10 @@
                   src="/img/museum-mob.webp"
                   alt="museum image"
                   class="w-full md:hidden" />
-                <div class="flex flex-col gap-3 md:pr-6 px-4 md:px-0 pb-6 md:pb-0 text-center md:text-left">
-                  <div class="flex gap-4 items-center justify-center md:justify-start">
+                <div
+                  class="flex flex-col gap-3 md:pr-6 px-4 md:px-0 pb-6 md:pb-0 text-center md:text-left">
+                  <div
+                    class="flex gap-4 items-center justify-center md:justify-start">
                     <h3
                       class="text-red font-medium text-xl md:text-[28px] text-ellipsis line-clamp-1">
                       The Museum (and Atlas) of Global Foodways

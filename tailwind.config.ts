@@ -19,6 +19,7 @@ export default <Partial<Config>>{
         "blue-3": "#2A2A2A",
         "red-2": "#E00002",
         "brown-2": "#EDD5B9",
+        "brown-3": "#F9EDDF",
       },
       backgroundImage: {
         "hero-bg": "url(/img/home-img.webp)",

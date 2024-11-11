@@ -9,6 +9,7 @@
           v-for="(item, index) in navigation.main"
           :key="item.name"
           :href="item.href"
+          :target="item.name === 'Kitchen Butterfly' || item.name === 'Feast Afrique' ? '_blank' : ''"
           class="text-white flex flex-col md:flex-row items-center justify-center">
           {{ item.name }}
           <div
@@ -42,17 +43,17 @@ import { defineComponent, h } from "vue";
 
 const navigation = {
   main: [
-    { name: "My Story", href: "#" },
-    { name: "Book", href: "#" },
-    { name: "Kitchen Butterfly", href: "#" },
-    { name: "Feast Afrique", href: "#" },
-    { name: "A-Z Glossary", href: "#" },
+    { name: "My Story", href: "/about" },
+    { name: "Book", href: "/book" },
+    { name: "Kitchen Butterfly", href: "https://www.kitchenbutterfly.com/" },
+    { name: "Feast Afrique", href: "https://www.feastafrique.com/" },
+    { name: "A-Z Glossary", href: "/glossary" },
     { name: "Privacy Policy", href: "#" },
   ],
   social: [
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/kitchenbutterfly/",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -66,7 +67,7 @@ const navigation = {
     },
     {
       name: "X",
-      href: "#",
+      href: "https://twitter.com/Kitchnbutterfly",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -78,7 +79,7 @@ const navigation = {
     },
     {
       name: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/ozoz.sokoh/",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -91,8 +92,8 @@ const navigation = {
       }),
     },
     {
-      name: "GitHub",
-      href: "#",
+      name: "Pinterest",
+      href: "https://ca.pinterest.com/ozozsokoh/",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -106,7 +107,7 @@ const navigation = {
     },
     {
       name: "YouTube",
-      href: "#",
+      href: "https://www.youtube.com/@kitchenbutterfly",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 28 28" }, [
@@ -120,7 +121,7 @@ const navigation = {
     },
     {
       name: "TikTok",
-      href: "#",
+      href: "https://www.tiktok.com/@oz_kitchenbutterfly",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 28 28" }, [
@@ -134,7 +135,7 @@ const navigation = {
     },
     {
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/ozozsokoh/",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 28 28" }, [

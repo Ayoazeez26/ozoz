@@ -30,12 +30,24 @@ const letters = ref([
 ]);
 const selectedLetter = ref("A");
 
-const goToLetter = (letter: any) => {
+const goToLetter = (letter: { name: string; to: string }) => {
   selectedLetter.value = letter.name;
-  const link = document.createElement("a");
-  link.href = letter.to;
-  link.click();
+  // const link = document.createElement("a");
+  // link.href = letter.to;
+  // link.click();
+  const element = document.querySelector(letter.to);
+  const offset = 210; // Adjust this value to match the combined height of the navbar and search bar
+
+  if (element) {
+    const topPosition =
+      element.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({
+      top: topPosition,
+      behavior: "smooth",
+    });
+  }
 };
+
 const data = ref([
   {
     A: [
@@ -489,24 +501,27 @@ const data = ref([
 const filteredData = computed(() => {
   if (!searchTerm.value) return data.value;
 
-  return data.value.map(letterGroup => {
-    const letter = Object.keys(letterGroup)[0];
-    const filteredItems = letterGroup[letter].filter(item =>
-      item.title.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-      item.desc.toLowerCase().includes(searchTerm.value.toLowerCase())
-    );
+  return data.value
+    .map((letterGroup) => {
+      const letter = Object.keys(letterGroup)[0];
+      const filteredItems = letterGroup[letter].filter(
+        (item) =>
+          item.title.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
+          item.desc.toLowerCase().includes(searchTerm.value.toLowerCase())
+      );
 
-    return filteredItems.length ? { [letter]: filteredItems } : null;
-  }).filter(Boolean); // Remove any null entries
+      return filteredItems.length ? { [letter]: filteredItems } : null;
+    })
+    .filter(Boolean); // Remove any null entries
 });
 </script>
 <template>
-  <div class="bg-[#F9EDDF]">
+  <div class="bg-brown-3">
     <div class="relative isolate flex flex-col items-center pt-[100px] w-full">
       <div
         class="mt-2.5 flex px-4 md:px-6 flex-col relative z-[1] w-full max-w-[1160px] mx-auto">
         <div
-          class="text-[#AAAAAA] md:pb-8 bg-[#F9EDDF] sticky top-[100px] self-start w-full max-w-[1160px]">
+          class="text-[#AAAAAA] md:pb-8 bg-brown-3 sticky top-[100px] self-start w-full max-w-[1160px]">
           <Icon
             name="ph:magnifying-glass-bold"
             size="20"
@@ -521,37 +536,42 @@ const filteredData = computed(() => {
         </div>
         <div class="flex flex-col items-start md:flex-row mt-16 w-full">
           <div
-            class="sticky self-start top-[200px] md:top-[205px] md:w-[78px] flex md:flex-col overflow-x-auto justify-start pb-10">
-            <button
-              v-for="(letter, index) in letters"
-              :key="index"
-              @click="goToLetter(letter)"
-              :class="[
-                'border border-brown-2 border-b-0 flex items-center justify-center px-5 py-3 !w-[78px] h-[78px] font-sauce',
-                selectedLetter === letter.name
-                  ? 'bg-blue text-brown-2'
-                  : 'bg-transparent text-brown',
-              ]">
-              {{ letter.name }}
-            </button>
+            class="sticky self-start top-[205px] md:w-[78px] hidden md:flex md:flex-col overflow-x-auto justify-start mr-4">
+            <div class="overflow-y-auto max-h-[calc(100vh-205px)] pb-10">
+              <button
+                v-for="(letter, index) in letters"
+                :key="index"
+                @click="goToLetter(letter)"
+                :class="[
+                  'border border-brown-2 border-b-0 flex items-center justify-center px-5 py-3 !w-[78px] h-[78px] font-sauce',
+                  selectedLetter === letter.name
+                    ? 'bg-blue text-brown-2'
+                    : 'bg-transparent text-brown',
+                ]">
+                {{ letter.name }}
+              </button>
+            </div>
           </div>
           <div class="flex flex-col gap-4 w-full max-w-[669px] md:pl-[119px]">
-            <div class="gap-4" v-for="(letterData, index) in filteredData" :key="index">
-              <h2 :id="Object.keys(letterData)[0]" class="text-red-2 text-[40px] font-medium">
+            <div
+              class="gap-4"
+              v-for="(letterData, index) in filteredData"
+              :key="index">
+              <h2
+                :id="Object.keys(letterData)[0]"
+                class="text-red-2 text-[40px] font-medium">
                 {{ Object.keys(letterData)[0] }}
               </h2>
-              <div class="mb-14">
-                <div
-                  v-for="(item, idx) in letterData[Object.keys(letterData)[0]]"
-                  :key="idx"
-                  class="bg-white flex flex-col gap-4 p-8 rounded-2xl w-full mb-4">
-                  <h3 class="text-red-2 text-2xl font-medium uppercase">
-                    {{ item.title }}
-                  </h3>
-                  <p class="text-brown text-lg/[140%] tracking-[-0.27px]">
-                    {{ item.desc }}
-                  </p>
-                </div>
+              <div
+                v-for="(item, idx) in letterData[Object.keys(letterData)[0]]"
+                :key="idx"
+                class="bg-white flex flex-col gap-4 p-8 rounded-2xl w-full mb-4">
+                <h3 class="text-red-2 text-2xl font-medium uppercase">
+                  {{ item.title }}
+                </h3>
+                <p class="text-brown text-lg/[140%] tracking-[-0.27px]">
+                  {{ item.desc }}
+                </p>
               </div>
             </div>
           </div>

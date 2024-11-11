@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F9EDDF] py-16 sm:py-24 relative">
+  <div class="bg-brown-3 py-16 sm:py-24 relative">
     <img
       src="/svg/bg-lines.svg"
       alt="lines"
@@ -13,14 +13,15 @@
       alt="branch image"
       class="absolute hidden md:block bottom-0 left-0 rotate-[279deg] z-0" />
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div
-        class="relative overflow-hidden sm:rounded-3xl">
+      <div class="relative overflow-hidden sm:rounded-3xl">
         <h2
           class="mx-auto max-w-3xl text-center text-[32px] font-medium text-red sm:text-[40px]">
           Stay up to date
         </h2>
-        <p class="mx-auto mt-6 w-full max-w-2xl text-center text-lg/[140%] md:text-xl/[140%] text-brown">
-          Join our community to receive the latest updates, exclusive recipes, and stories celebrating West African cuisine straight to your inbox!
+        <p
+          class="mx-auto mt-6 w-full max-w-2xl text-center text-lg/[140%] md:text-xl/[140%] text-brown">
+          Join our community to receive the latest updates, exclusive recipes,
+          and stories celebrating West African cuisine straight to your inbox!
         </p>
         <form class="mx-auto mt-10 flex max-w-md gap-x-4">
           <label for="email-address" class="sr-only">Email address</label>

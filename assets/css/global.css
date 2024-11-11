@@ -20,3 +20,30 @@ body, html {
   transform: rotateY(180deg);
   transform: rotateZ(279deg);
 }
+
+/* Apply to the entire page */
+html {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #A86563 #F9EDDF; /* Firefox */
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  height: 6px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #F9EDDF; /* Color of the track */
+  border-radius: 3px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A86563; /* Color of the thumb */
+  border-radius: 3px; /* Rounded corners */
+  border: 2px solid #F9EDDF; /* Padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #A86563; /* Darker color on hover */
+}

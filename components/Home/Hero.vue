@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="bg-[#F9EDDF] scroll-smooth">
+  <div class="bg-brown-3 scroll-smooth">
     <div class="relative isolate flex flex-col items-center md:pt-14">
       <img
         src="/svg/bg-lines.svg"
@@ -17,8 +17,8 @@
         alt="branch image"
         class="absolute bottom-0 right-40 rotate-180 z-0" />
       <div
-        class="mx-auto w-full max-w-7xl px-4 md:px-6 py-20 sm:py-32 lg:flex flex-wrap lg:items-center lg:gap-x-10 xl:px-0 lg:py-40">
-        <div class="mx-auto max-w-xl lg:mx-0 lg:flex-auto relative z-[1]">
+        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 lg:flex flex-wrap lg:items-center lg:gap-x-10 xl:px-0 lg:py-40">
+        <div class="mx-auto max-w-xl lg:mx-0 lg:flex-auto">
           <h1
             class="mt-10 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
             Chop Chop
@@ -46,34 +46,35 @@
         <div class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
           <img src="/img/chop-book.webp" alt="chop book" />
           <img
-              src="/img/bowl.webp"
-              alt="bowl of soup"
-              class="absolute lg:hidden -top-40 -right-20" />
+            src="/img/bowl.webp"
+            alt="bowl of soup"
+            class="absolute lg:hidden -top-40 -right-20" />
         </div>
-        <div class="flex flex-col gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue">
+        <div
+          class="flex flex-col gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue">
           <h3 class="text-2xl text-red">United States</h3>
           <nuxt-link to="#" class="flex items-center gap-3 p-2">
             HBG
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+          <nuxt-link to="https://www.amazon.com/gp/product/1648291899?tag=hacboogrosit-20" target="_blank" class="flex items-center gap-3 p-2">
             Amazon
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="#" class="flex items-center gap-3 p-2">
-            Barnes & Boble
+          <nuxt-link to="https://www.barnesandnoble.com/w/chop-chop-ozoz-sokoh/1145934034;jsessionid=F8B6CB4B7D560C9E313FD3BEBD33A386.prodny_store01-atgap05?ean=9781648291890&st=AFF&2sid=Hachette%20Book%20Group_8040641_NA&sourceId=AFFHachette%20Book%20Group" target="_blank" class="flex items-center gap-3 p-2">
+            Barnes & Noble
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
           <h3 class="text-2xl text-red">Canada</h3>
-          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+          <nuxt-link to="https://www.indigo.ca/en-ca/chop-chop-cooking-the-food-of-nigeria/9780525612544.html" target="_blank" class="flex items-center gap-3 p-2">
             Indigo
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+          <nuxt-link to="https://www.amazon.ca/Chop-Cooking-Food-Nigeria/dp/0525612548" target="_blank" class="flex items-center gap-3 p-2">
             Amazon.ca
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+          <nuxt-link to="https://shoplocal.bookmanager.com/isbn/9780525612544" target="_blank" class="flex items-center gap-3 p-2">
             Shop Local
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
@@ -81,7 +82,7 @@
       </div>
       <a
         href="#about"
-        class="text-blue hidden md:flex pb-8 font-medium gap-3 items-center"
+        class="text-blue hidden md:flex pb-8 font-medium gap-3 relative z-[1] items-center"
         >SCROLL DOWN <Icon name="solar:arrow-down-linear" size="20"
       /></a>
       <div id="about" />
