@@ -32,8 +32,8 @@ const goToAbout = () => {
         alt="branch image"
         class="absolute bottom-0 right-40 rotate-180 z-0" />
       <div
-        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 lg:flex flex-wrap lg:items-center lg:gap-x-10 xl:px-0 lg:py-40">
-        <div class="mx-auto max-w-xl lg:mx-0 lg:flex-auto">
+        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 lg:flex flex-wrap lg:items-start lg:gap-x-10 xl:px-0 lg:py-40">
+        <div class="mx-auto w-full max-w-[612px] lg:mx-0 lg:flex-auto">
           <h1
             class="mt-10 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
             Chop Chop
@@ -44,10 +44,8 @@ const goToAbout = () => {
               alt="bowl of soup"
               class="absolute -top-5 -left-20 hidden lg:block" />
             <p
-              class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%] max-w-[408px]">
-              Immerse yourself in a world of captivating stories and profound
-              insights. Ozoz Sokoh's newest book is a journey you won't want to
-              miss. Save 30% when you preorder.
+              class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%] max-w-[452px]">
+              Travel to Nigeria, by Plate through Ozoz's debut cookbook, Chop Chop. This is a journey you dont want to miss. Pre-order Now on <span class="text-red font-bold">March 18, 2025</span>!
             </p>
             <div class="mt-10 flex items-center gap-x-6">
               <nuxt-link
@@ -58,15 +56,15 @@ const goToAbout = () => {
             </div>
           </div>
         </div>
-        <div class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
-          <img src="/img/chop-book.webp" alt="chop book" />
+        <div class="mt-16 relative sm:mt-24 lg:mt-0 flex justify-end lg:shrink-0 lg:grow">
+          <img src="/img/chop-bookk.webp" alt="chop book" class="self-end w-full max-w-[305px]" />
           <img
             src="/img/bowl.webp"
             alt="bowl of soup"
             class="absolute lg:hidden -top-40 -right-20" />
         </div>
         <div
-          class="flex flex-col gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue">
+          class="flex flex-col gap-6 mt-10 text-lg font-medium text-blue">
           <h3 class="text-2xl text-red">United States</h3>
           <nuxt-link to="#" class="flex items-center gap-3 p-2">
             HBG

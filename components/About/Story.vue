@@ -48,7 +48,7 @@
         </div>
         <div
           class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow max-w-fit">
-          <img src="/img/ozoz-one1.webp" alt="ozoz first image" class="w-full max-w-[520px]"/>
+          <img src="/img/ozoz1.webp" alt="ozoz first image" class="w-full max-w-[520px]"/>
           <img
             src="/img/white-bowl.webp"
             alt="white bowl of soup"

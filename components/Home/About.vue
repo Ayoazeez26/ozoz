@@ -20,7 +20,7 @@
         class="mx-auto max-w-7xl px-4 md:px-6 py-16 sm:py-32 lg:flex lg:items-center justify-between lg:gap-x-10 lg:px-8 xl:px-0 lg:py-20 relative z-[1]">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <h2
-            class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
+            class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl ml-3">
             Ozoz Sokoh
           </h2>
           <p
@@ -39,7 +39,7 @@
         </div>
         <div
           class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow max-w-fit">
-          <img src="/img/ozoz-one.webp" alt="ozoz first image" />
+          <img src="/img/ozoz-onee.webp" alt="ozoz first image" class="w-full max-w-[520px]" />
           <img
             src="/img/white-bowl.webp"
             alt="white bowl of soup"

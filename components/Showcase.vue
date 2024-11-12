@@ -81,11 +81,11 @@
               <div
                 class="flex flex-col md:flex-row items-center gap-6 md:gap-10 rounded-3xl border border-grey-3 bg-grey-4 w-full">
                 <img
-                  src="/img/museum.webp"
+                  src="/img/museumm.webp"
                   alt="museum image"
                   class="w-full hidden md:block max-w-[280px]" />
                 <img
-                  src="/img/museum-mob.webp"
+                  src="/img/museumm-mob.webp"
                   alt="museum image"
                   class="w-full md:hidden" />
                 <div
