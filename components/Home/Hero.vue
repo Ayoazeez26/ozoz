@@ -33,19 +33,16 @@ const goToAbout = () => {
         class="absolute bottom-0 right-40 rotate-180 z-0" />
       <div
         class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 lg:flex flex-wrap lg:items-start lg:gap-x-10 xl:px-0 lg:py-40">
-        <div class="mx-auto w-full max-w-[612px] lg:mx-0 lg:flex-auto">
+        <div class="mx-auto w-full max-w-[600px] lg:mx-0 lg:flex-auto">
           <h1
             class="mt-10 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
             Chop Chop
           </h1>
-          <div class="relative pl-9 lg:pl-40">
-            <img
-              src="/img/bowl.webp"
-              alt="bowl of soup"
-              class="absolute -top-5 -left-20 hidden lg:block" />
+          <div class="">
+            
             <p
-              class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%] max-w-[452px]">
-              Travel to Nigeria, by Plate through Ozoz's debut cookbook, Chop Chop. This is a journey you dont want to miss. Pre-order Now on <span class="text-red font-bold">March 18, 2025</span>!
+              class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
+              Travel to Nigeria, by Plate through Ozoz's debut cookbook, Chop Chop. This is a journey you dont want to miss. Pre-order Now on <span class="text-red font-bold">March 18, 2025</span>. All the details are here, including links for where you can pre-order.
             </p>
             <div class="mt-10 flex items-center gap-x-6">
               <nuxt-link
@@ -56,17 +53,13 @@ const goToAbout = () => {
             </div>
           </div>
         </div>
-        <div class="mt-16 relative sm:mt-24 lg:mt-0 flex justify-end lg:shrink-0 lg:grow">
-          <img src="/img/chop-bookk.webp" alt="chop book" class="self-end w-full max-w-[305px]" />
-          <img
-            src="/img/bowl.webp"
-            alt="bowl of soup"
-            class="absolute lg:hidden -top-40 -right-20" />
+        <div class="mt-16 relative sm:mt-24 lg:mt-0 flex justify-start lg:shrink-0 lg:grow">
+          <img src="/img/chop-bookk.webp" alt="chop book" class=" w-full max-w-[364px]" />
         </div>
         <div
           class="flex flex-col gap-6 mt-10 text-lg font-medium text-blue">
           <h3 class="text-2xl text-red">United States</h3>
-          <nuxt-link to="#" class="flex items-center gap-3 p-2">
+          <nuxt-link to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan" target="_blank" class="flex items-center gap-3 p-2">
             HBG
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>

@@ -19,7 +19,7 @@ const formData = ref({
           <p class="mt-5 text-xl/[140%] tracking-[-0.3px] text-brown">
             Our friendly team would love to hear from you.
           </p>
-          <form action="#" method="POST" class="lg:flex-auto mt-12">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfSYyqMCYa7cH6wqg-Q4EhWTQAAQttgdhoqdoL-n5il4q5f_w/formResponse" method="POST" class="lg:flex-auto mt-12">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label
@@ -31,7 +31,7 @@ const formData = ref({
                   <input
                     v-model="formData.firstName"
                     type="text"
-                    name="first-name"
+                    name="entry.958064767"
                     id="first-name"
                     autocomplete="given-name"
                     class="block w-full rounded-md border-0 p-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown/50 sm:text-sm/6"
@@ -48,7 +48,7 @@ const formData = ref({
                   <input
                     v-model="formData.lastName"
                     type="text"
-                    name="last-name"
+                    name="entry.314468623"
                     id="last-name"
                     autocomplete="family-name"
                     class="block w-full rounded-md border-0 p-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown/50 sm:text-sm/6"
@@ -65,7 +65,7 @@ const formData = ref({
                   <input
                     v-model="formData.email"
                     type="email"
-                    name="email"
+                    name="entry.623085307"
                     id="email"
                     class="block w-full rounded-md border-0 p-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown/50 sm:text-sm/6"
                     placeholder="you@example.com" />
@@ -81,7 +81,7 @@ const formData = ref({
                   <textarea
                     v-model="formData.message"
                     id="message"
-                    name="message"
+                    name="entry.1949268381"
                     rows="4"
                     class="block w-full rounded-md border-0 p-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown/50 sm:text-sm/6"
                     placeholder="Leave us a message..." />
@@ -95,12 +95,12 @@ const formData = ref({
                 Send message
               </button>
             </div>
-            <p class="mt-4 text-sm/6 text-gray-500">
+            <!-- <p class="mt-4 text-sm/6 text-gray-500">
               By submitting this form, I agree to the
               <a href="#" class="font-semibold text-indigo-600"
                 >privacy&nbsp;policy</a
               >.
-            </p>
+            </p> -->
           </form>
 
         </div>

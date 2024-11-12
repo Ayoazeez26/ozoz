@@ -48,7 +48,7 @@ const navigation = {
     { name: "Kitchen Butterfly", href: "https://www.kitchenbutterfly.com/" },
     { name: "Feast Afrique", href: "https://www.feastafrique.com/" },
     { name: "A-Z Glossary", href: "/glossary" },
-    { name: "Privacy Policy", href: "#" },
+    { name: "Privacy Policy", href: "/about" },
   ],
   social: [
     {
@@ -121,7 +121,7 @@ const navigation = {
     },
     {
       name: "TikTok",
-      href: "https://www.tiktok.com/@oz_kitchenbutterfly",
+      href: "https://www.tiktok.com/@ozozsokoh",
       icon: defineComponent({
         render: () =>
           h("svg", { fill: "currentColor", viewBox: "0 0 28 28" }, [

@@ -18,7 +18,8 @@
         class="absolute hidden md:block top-[550px] right-80 rotate-180 z-0" />
       <div
         class="mx-auto w-full max-w-7xl px-4 md:px-6 py-24 sm:py-32 lg:flex lg:justify-between items-start lg:gap-x-10 xl:px-0 lg:py-40 relative z-[1]">
-        <div class="lg:sticky lg:self-start lg:top-[200px] mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow hidden lg:block">
+        <div
+          class="lg:sticky lg:self-start lg:top-[200px] mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow hidden lg:block">
           <img
             src="/img/chop-bookk.webp"
             alt="chop book"
@@ -36,21 +37,22 @@
             class="max-w-[521px] md:hidden w-full" />
           <p class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
             Chop Chop celebrates the vibrant, diverse world of Nigerian cuisine,
-            featuring dishes like spicy beef suya, rich egusi stew, and jollof
-            rice, as well as puff puff, hibiscus drinks, and more. With
-            Nigeria’s culinary heritage rooted in over 250 ethnicities, author
-            and culinary anthropologist Ozoz Sokoh compiles the country's
-            beloved flavors—nuts, grains, greens, and tubers—into hearty soups,
-            stews, rice dishes, and fritters. This book brings traditional
-            Nigerian food to the home kitchen with historical context,
-            ingredient profiles, and stunning visuals, capturing the nation’s
-            food-loving spirit and cultural richness. Pre-order Now on <span class="text-red font-bold">March 18, 2025</span>!
+            featuring dishes like spiced beef suya, rich egusi soup, jollof
+            rice, puff puff, and hibiscus drinks. Join author, Ozoz Sokoh on
+            this journey, as you explore the country's beloved tastes and
+            flavors in hearty soups, stews, rice dishes, fritters, and more.
+            This book brings traditional Nigerian cuisine to home kitchens, and
+            is full of historical context, ingredient profiles, and stunning
+            visuals, capturing the nation’s food-loving spirit and cultural
+            richness. Preorder now. The book is officially on sale
+            <span class="text-red font-bold">March 18, 2025</span>. All the
+            details and links for you to pre-order are here.!
           </p>
           <div class="">
             <h3 class="font-medium text-2xl text-red">United States</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="https://www.amazon.com/gp/product/1648291899?tag=hacboogrosit-20"
+                to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
                 HBG
@@ -110,6 +112,20 @@
                 Shop Local
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
+              <nuxt-link
+                to="https://anotherstory.ca/item/BXWUqR7ec6jvgFHW4zLVlQ"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Another Story Bookshop
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+              <nuxt-link
+                to="https://www.adifferentbooklist.com/item/BXWUqR7ec6jvgFHW4zLVlQ"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                A Different Booklist
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
             </div>
           </div>
           <div class="">
@@ -163,27 +179,85 @@
             </div>
           </div>
           <div class="">
+            <h3 class="font-medium text-2xl text-red">Nigeria</h3>
+            <div class="flex flex-wrap gap-4 mt-2 text-blue">
+              <nuxt-link
+                to="https://www.narrativelandscape.com/"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Narrative Landscape Press (Coming soon on)
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+            </div>
+          </div>
+          <div class="">
             <h2
-            class="text-pretty text-[48px] font-medium tracking-tight text-red sm:text-5xl">
-            More About the Book
-          </h2>
-            <div class="text-pretty mt-6 text-base/[140%] text-brown sm:text-lg/[25.2px]">
+              class="text-pretty text-[48px] font-medium tracking-tight text-red sm:text-5xl">
+              More About the Book
+            </h2>
+            <div
+              class="text-pretty mt-6 text-base/[140%] text-brown sm:text-lg/[25.2px]">
               <p class="mb-2">
-                An introduction to classic Nigerian home cooking featuring 100 delicious recipes by food explorer, culinary anthropologist, and Nigerian Native of @kitchenbutterfly fame, Ozoz Sokoh.
+                An introduction to classic Nigerian home cooking featuring 100
+                delicious recipes by food explorer, culinary anthropologist, and
+                Nigerian Native of @kitchenbutterfly fame, Ozoz Sokoh.
               </p>
-              <p class="mb-2">In Nigeria, the word “chop” is all about food and feasting and “chop chop” a nickname given to someone who loves to eat. And it's no surprise Nigeria has an entire vocabulary dedicated to eating—with more than 50 nationally recognized languages and over 250 ethnicities, Nigeria's food is as rich and diverse as its people.This book reflects the foodways’ incredibly flavorful complexity, ingredients, and recipes from all six regions, gathered and showcased in a highly photographic cookbook.
-</p>
-              <p class="mb-2">In Chop Chop, author, culinary anthropologist, and Nigerian Native Ozoz Sokoh celebrates classic and traditional Nigerian cuisine to underscore the ingredients, flavors, and textures that make it not only beloved, but delicious and easy for the home cook. Featuring:
-</p>
-              <p class="mb-2"><span class="text-red font-bold">A COLLECTION OF CLASSIC AND TRADITIONAL NIGERIAN RECIPES</span>: Think smoky spiced beef suya skewers, egusi soup with greens, restorative pepper soup, jollof rice studded with tomatoes, soft puff puff dough bites, and sweet-tart hibiscus drinks, and more from across the country.
-</p>
-              <p class="mb-2"><span class="text-red font-bold">LEXICON OF NIGERIAN CUISINE</span>: Learn how to shop and cook like a Nigerian and learn about the ingredients integral to Nigerian cuisine, like nuts and seeds, greens, grains, and cereals (especially in the north), roots and tubers (favorites of the south), and proteins that come together on the plate in the form of hearty soups and stews, steamed puddings, salads, rice dishes, fritters, and more.
-</p>
-              <p class="mb-2"><span class="text-red font-bold">ILLUMINATING CULTURAL AND HISTORICAL EXPLORATIONS</span>: With headnotes and sidebars that give important cultural and historical context, including how Nigerian cuisine travelled the globe leaving its mark, you will learn the deep roots behind dishes and drinks, and global foodways connections.
-</p>
-              <p class="mb-2"><span class="text-red font-bold">STUNNING PHOTOGRAPHY</span>: With gorgeous photos from Nigeria’s landscapes, food markets, and people, as well as beautiful photography of ingredients and finished dishes, Chop Chop is a cookbook to behold.
-</p>
-              <p class="mb-2">Written through the lens of Ozoz's deep connection to the region, Chop Chop will bring Nigeria's food-loving spirit to home kitchens everywhere, so you can travel, by plate.</p>
+              <p class="mb-2">
+                In Nigeria, the word “chop” is all about food and feasting and
+                “chop chop” a nickname given to someone who loves to eat. And
+                it's no surprise Nigeria has an entire vocabulary dedicated to
+                eating—with more than 50 nationally recognized languages and
+                over 250 ethnicities, Nigeria's food is as rich and diverse as
+                its people.This book reflects the foodways’ incredibly flavorful
+                complexity, ingredients, and recipes from all six regions,
+                gathered and showcased in a highly photographic cookbook.
+              </p>
+              <p class="mb-2">
+                In Chop Chop, author, culinary anthropologist, and Nigerian
+                Native Ozoz Sokoh celebrates classic and traditional Nigerian
+                cuisine to underscore the ingredients, flavors, and textures
+                that make it not only beloved, but delicious and easy for the
+                home cook. Featuring:
+              </p>
+              <p class="mb-2">
+                <span class="text-red font-bold"
+                  >A COLLECTION OF CLASSIC AND TRADITIONAL NIGERIAN
+                  RECIPES</span
+                >: Think smoky spiced beef suya skewers, egusi soup with greens,
+                restorative pepper soup, jollof rice studded with tomatoes, soft
+                puff puff dough bites, and sweet-tart hibiscus drinks, and more
+                from across the country.
+              </p>
+              <p class="mb-2">
+                <span class="text-red font-bold"
+                  >LEXICON OF NIGERIAN CUISINE</span
+                >: Learn how to shop and cook like a Nigerian and learn about
+                the ingredients integral to Nigerian cuisine, like nuts and
+                seeds, greens, grains, and cereals (especially in the north),
+                roots and tubers (favorites of the south), and proteins that
+                come together on the plate in the form of hearty soups and
+                stews, steamed puddings, salads, rice dishes, fritters, and
+                more.
+              </p>
+              <p class="mb-2">
+                <span class="text-red font-bold"
+                  >ILLUMINATING CULTURAL AND HISTORICAL EXPLORATIONS</span
+                >: With headnotes and sidebars that give important cultural and
+                historical context, including how Nigerian cuisine travelled the
+                globe leaving its mark, you will learn the deep roots behind
+                dishes and drinks, and global foodways connections.
+              </p>
+              <p class="mb-2">
+                <span class="text-red font-bold">STUNNING PHOTOGRAPHY</span>:
+                With gorgeous photos from Nigeria’s landscapes, food markets,
+                and people, as well as beautiful photography of ingredients and
+                finished dishes, Chop Chop is a cookbook to behold.
+              </p>
+              <p class="mb-2">
+                Written through the lens of Ozoz's deep connection to the
+                region, Chop Chop will bring Nigeria's food-loving spirit to
+                home kitchens everywhere, so you can travel, by plate.
+              </p>
             </div>
           </div>
         </div>

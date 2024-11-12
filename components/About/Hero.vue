@@ -39,7 +39,7 @@
               <span class="font-semibold">#NewNigerianKitchen</span>, developing
               her philosophy and practice with Nigerian food. Also central to
               her work is connectedness through food, from food sovereignty,
-              cultural identity, reclamation of food systems and importantly,
+              cultural identity, instead of food systems and importantly,
               the joy of eating.
             </p>
             <p

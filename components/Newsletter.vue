@@ -34,7 +34,7 @@
             class="min-w-0 flex-auto border-0 bg-white p-6 rounded-l-2xl text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm/6"
             placeholder="Enter your email address" /> -->
           <a
-            href="https://us8.campaign-archive.com/home/?u=6d556d46e3c5b5e41d3b7a8ba&id=54759f9d2e"
+            href="https://kitchenbutterfly.us8.list-manage.com/subscribe?u=6d556d46e3c5b5e41d3b7a8ba&id=54759f9d2e"
             target="_blank"
             class="flex-none uppercase rounded-2xl bg-blue -ml-4 p-6 text-white hover:bg-[#102A56] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
             Subscribe

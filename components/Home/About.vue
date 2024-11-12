@@ -40,10 +40,7 @@
         <div
           class="mt-16 relative sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow max-w-fit">
           <img src="/img/ozoz-onee.webp" alt="ozoz first image" class="w-full max-w-[520px]" />
-          <img
-            src="/img/white-bowl.webp"
-            alt="white bowl of soup"
-            class="absolute top-0 md:top-20 -left-5 md:-left-24 w-[109px] md:w-auto" />
+          
         </div>
       </div>
     </div>
