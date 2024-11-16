@@ -37,7 +37,7 @@ const swipeNext = () => {
           <div class="flex flex-col md:flex-row justify-between relative">
             <h2
               class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
-              Other works
+              Other Work
             </h2>
             <div class="flex self-end md:self-start mt-6 md:mt-0 gap-3">
               <button

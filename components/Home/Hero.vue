@@ -39,10 +39,12 @@ const goToAbout = () => {
             Chop Chop
           </h1>
           <div class="">
-            
             <p
               class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
-              Travel to Nigeria, by Plate through Ozoz's debut cookbook, Chop Chop. This is a journey you dont want to miss. Pre-order Now on <span class="text-red font-bold">March 18, 2025</span>. All the details are here, including links for where you can pre-order.
+              Travel to Nigeria by plate with my debut cookbook, Chop Chop. Chop
+              Chop is available to pre-order now. The book is officially on sale
+              <span class="text-red font-bold">March 18, 2025</span>. All the
+              details and links food you to pre-order are here.
             </p>
             <div class="mt-10 flex items-center gap-x-6">
               <nuxt-link
@@ -53,34 +55,55 @@ const goToAbout = () => {
             </div>
           </div>
         </div>
-        <div class="mt-16 relative sm:mt-24 lg:mt-0 flex justify-start lg:shrink-0 lg:grow">
-          <img src="/img/chop-bookk.webp" alt="chop book" class=" w-full max-w-[364px]" />
-        </div>
         <div
-          class="flex flex-col gap-6 mt-10 text-lg font-medium text-blue">
+          class="mt-16 relative sm:mt-24 lg:mt-0 flex justify-start lg:shrink-0 lg:grow">
+          <img
+            src="/img/chop-bookk.webp"
+            alt="chop book"
+            class="w-full max-w-[364px]" />
+        </div>
+        <div class="flex flex-col gap-6 mt-10 text-lg font-medium text-blue">
           <h3 class="text-2xl text-red">United States</h3>
-          <nuxt-link to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan" target="_blank" class="flex items-center gap-3 p-2">
+          <nuxt-link
+            to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan"
+            target="_blank"
+            class="flex items-center gap-3 p-2">
             HBG
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="https://www.amazon.com/gp/product/1648291899?tag=hacboogrosit-20" target="_blank" class="flex items-center gap-3 p-2">
+          <nuxt-link
+            to="https://www.amazon.com/gp/product/1648291899?tag=hacboogrosit-20"
+            target="_blank"
+            class="flex items-center gap-3 p-2">
             Amazon
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="https://www.barnesandnoble.com/w/chop-chop-ozoz-sokoh/1145934034;jsessionid=F8B6CB4B7D560C9E313FD3BEBD33A386.prodny_store01-atgap05?ean=9781648291890&st=AFF&2sid=Hachette%20Book%20Group_8040641_NA&sourceId=AFFHachette%20Book%20Group" target="_blank" class="flex items-center gap-3 p-2">
+          <nuxt-link
+            to="https://www.barnesandnoble.com/w/chop-chop-ozoz-sokoh/1145934034;jsessionid=F8B6CB4B7D560C9E313FD3BEBD33A386.prodny_store01-atgap05?ean=9781648291890&st=AFF&2sid=Hachette%20Book%20Group_8040641_NA&sourceId=AFFHachette%20Book%20Group"
+            target="_blank"
+            class="flex items-center gap-3 p-2">
             Barnes & Noble
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
           <h3 class="text-2xl text-red">Canada</h3>
-          <nuxt-link to="https://www.indigo.ca/en-ca/chop-chop-cooking-the-food-of-nigeria/9780525612544.html" target="_blank" class="flex items-center gap-3 p-2">
+          <nuxt-link
+            to="https://www.indigo.ca/en-ca/chop-chop-cooking-the-food-of-nigeria/9780525612544.html"
+            target="_blank"
+            class="flex items-center gap-3 p-2">
             Indigo
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="https://www.amazon.ca/Chop-Cooking-Food-Nigeria/dp/0525612548" target="_blank" class="flex items-center gap-3 p-2">
+          <nuxt-link
+            to="https://www.amazon.ca/Chop-Cooking-Food-Nigeria/dp/0525612548"
+            target="_blank"
+            class="flex items-center gap-3 p-2">
             Amazon.ca
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
-          <nuxt-link to="https://shoplocal.bookmanager.com/isbn/9780525612544" target="_blank" class="flex items-center gap-3 p-2">
+          <nuxt-link
+            to="https://shoplocal.bookmanager.com/isbn/9780525612544"
+            target="_blank"
+            class="flex items-center gap-3 p-2">
             Shop Local
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
@@ -88,9 +111,9 @@ const goToAbout = () => {
       </div>
       <button
         @click="goToAbout"
-        class="text-blue hidden md:flex pb-8 font-medium gap-3 relative z-[1] cursor-pointer items-center"
-        >SCROLL DOWN <Icon name="solar:arrow-down-linear" size="20"
-      /></button>
+        class="text-blue hidden md:flex pb-8 font-medium gap-3 relative z-[1] cursor-pointer items-center">
+        SCROLL DOWN <Icon name="solar:arrow-down-linear" size="20" />
+      </button>
       <div ref="about" />
     </div>
   </div>

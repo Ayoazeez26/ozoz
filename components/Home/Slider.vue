@@ -67,9 +67,7 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              Sokoh was born in <span class="font-bold text-red">1976</span
-              ><br />
-              in Warri, on the southern coast of Nigeria.
+              Ozoz was born in Warri, on the southern coast of Nigeria
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -86,9 +84,9 @@ const breakpoints = ref({
               alt="journey one img"
               class="max-w-[177px]" />
             <p class="mt-5 text-lg/[140%]">
-              She attended the Obafemi Awolowo University in Ile-Ife, Nigeria
-              for 3 years, studying Urban and Regional Planning, and left in
-              1997.
+              She didn’t enjoy food until <span class="font-bold">1985</span>,
+              when she was nine years old. She fell in love with a hamburger and
+              Mirinda at Wimpy’s on Princes Street in Edinburgh
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -101,12 +99,14 @@ const breakpoints = ref({
         <div class="w-full flex items-start">
           <div class="w-full">
             <img
-              src="/img/journey3.webp"
+              src="/img/journey3&4.webp"
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              She moved to the United Kingdom where she earned a degree in
-              Geology from the University of Liverpool. 
+              Ozoz did not like Chemistry so opted out of Quantity surveying,
+              studying Urban & Regional Planning instead at Obafemi Awolowo
+              University, Ile-Ife until <span class="font-bold">1997</span>. She
+              loved cooking for her friends.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -119,15 +119,12 @@ const breakpoints = ref({
         <div class="w-full flex items-start">
           <div class="w-full">
             <img
-              src="/img/journey4.webp"
+              src="/img/journey3&4.webp"
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              During her time in the UK, she began cooking Nigerian food to feel
-              closer to home. According to Sokoh, she created her first recipe
-              in
-              <span class="font-bold">1998</span> while living and going to
-              school in the UK.
+              In <span class="font-bold">1997</span>, she moved to the UK to
+              study Geology, and fell in love with Chemistry.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -144,14 +141,10 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              After graduating from the University of Liverpool, Sokoh worked as
-              a geologist. She began a culinary blog,
-              <span class="text-red-2 font-medium italic"
-                >Kitchen Butterfly</span
-              >
-              , and blogged about Nigerian food while she lived and worked in
-              the Netherlands from <span class="font-bold">2007</span> to
-              <span class="font-bold">2011</span>. She developed recipes.
+              During her time in the UK, she discovered food as comfort, and
+              began cooking Nigerian dishes to fight homesickness. In
+              <span class="font-bold">1998</span>, she created her first recipe,
+              tomato salsa, which she still makes today.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -168,11 +161,10 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              Upon her return to Nigeria in <span class="font-bold">2011</span>,
-              she began researching familiar Nigerian ingredients and their uses
-              from the perspective of culinary anthropology. She researched and
-              presented a documentary on Agege bread, a staple in Nigeria, for
-              ‘<span class="text-red-2 font-medium italic">For Africans</span>’.
+              Ozoz worked as a geologist in Nigeria, then moved abroad. In
+              <span class="font-bold">2009</span>,, she began writing Kitchen
+              Butterfly, her food blog while living and working in The
+              Netherlands.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -189,12 +181,8 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              In <span class="font-bold">2020</span> Sokoh created
-              <span class="text-red-2 font-medium italic">Feast Afrique</span>,
-              an online curated collection of books relating to the culinary
-              history of West Africa and its diaspora. This collection includes
-              a digital library of <span class="font-bold">240+</span> West
-              African and diasporic culinary and literary resources. 
+              Her interest in travel, recipe research and development deepened
+              with writing.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -202,26 +190,26 @@ const breakpoints = ref({
           </div>
         </div>
       </SwiperSlide>
-      <!-- <SwiperSlide
+      <SwiperSlide
         class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
         <div class="w-full flex items-start">
-          <div class="w-full flex flex-col pt-20 justify-center items-center">
+          <div class="w-full">
             <img
               src="/img/journey8.webp"
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              She organized the first World Jollof Day in
-              <span class="font-bold">2017</span>. The festival is held to
-              celebrate Jollof rice, a dish that is ubiquitous in West Africa
-              and the region's best known dish worldwide. 
+              Her love for food history and its importance as cultural identity
+              began in <span class="font-bold">2009, 2010</span> when she
+              discovered Brazilian Acarajé, and its origins in Nigerian Àkàrà.
+              This was a turning point in her food journey.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
             <img src="/svg/link.svg" alt="link icon" />
           </div>
         </div>
-      </SwiperSlide> -->
+      </SwiperSlide>
       <SwiperSlide
         class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
         <div class="w-full flex items-start">
@@ -231,9 +219,11 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              She has created ‘<span class="font-bold italic">Eat The Book</span
-              >’ experiences, celebrating African food from African writing by
-              creating the dishes at literary and arts festivals.
+              Upon her return to Nigeria in <span class="font-hold">2011</span>,
+              she deepened her food research on Nigerian ingredients,
+              techniques, practices and more, in an attempt to document and
+              codify the cuisine, including building Nigeria’s first seasonal
+              produce calendar.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -250,13 +240,11 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              She was the co-organiser of <span
-                class="font-medium text-red-2 italic"
-                >Abori Food System Design Summit</span
-              >, which was held at <span class="font-bold text-red-2 italic"
-                >Alliance Française, Lagos</span
-              > in 2019 and featured food exhibitions, discussions and a
-              farmer's market.
+              In <span class="font-bold">2014</span>, she presented her work
+              Journey by Plate at TEDx Port Harcourt. In it, she documents the
+              origins, philosophy and practice of her ongoing
+              <span class="text-red-2 italic">#NewNigerianKitchen</span> 
+              project.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -264,7 +252,94 @@ const breakpoints = ref({
           </div>
         </div>
       </SwiperSlide>
-
+      <SwiperSlide
+        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
+        <div class="w-full flex items-start">
+          <div class="w-full">
+            <img
+              src="/img/journey11.webp"
+              alt="journey one img"
+              class="w-full max-w-[280px]" />
+            <p class="mt-5 text-lg/[140%]">
+              In the intervening years, Sokoh has created experiences including
+              <span class="text-red-2 italic">#EattheBooks</span> , celebrating
+              literary and visual works and translating them to tastes in food
+              and drink, at events and festivals across the world.
+            </p>
+          </div>
+          <div class="pt-[120px] w-full max-w-[87px]">
+            <img src="/svg/link.svg" alt="link icon" />
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide
+        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
+        <div class="w-full flex items-start">
+          <div class="w-full">
+            <img
+              src="/img/journey12.webp"
+              alt="journey one img"
+              class="w-full max-w-[280px]" />
+            <p class="mt-5 text-lg/[140%]">
+              In Her interest in curatorial work has led to the development of exhibitions including the <span class="font-bold">2019</span> Food is More Than Eating Exhibition held as part of the Abori Food System Design Summit.
+            </p>
+          </div>
+          <div class="pt-[120px] w-full max-w-[87px]">
+            <img src="/svg/link.svg" alt="link icon" />
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide
+        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
+        <div class="w-full flex items-start">
+          <div class="w-full">
+            <img
+              src="/img/journey13.webp"
+              alt="journey one img"
+              class="w-full max-w-[280px]" />
+            <p class="mt-5 text-lg/[140%]">
+              In Sokoh launched Feast Afrique in <span class="font-bold">2020</span>, an online platform dedicated to the documentation and celebration of West African Food and Drink. A digital library of <span class="font-bold">240</span>+ West African and diasporic culinary and literary resources are a key part of this work.
+            </p>
+          </div>
+          <div class="pt-[120px] w-full max-w-[87px]">
+            <img src="/svg/link.svg" alt="link icon" />
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide
+        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
+        <div class="w-full flex items-start">
+          <div class="w-full">
+            <img
+              src="/img/journey14.webp"
+              alt="journey one img"
+              class="w-full max-w-[280px]" />
+            <p class="mt-5 text-lg/[140%]">
+              In <span class="font-bold">2021</span>, Ozoz graduated with Honors from the Museum and Cultural Management Program at Centennial College, Canada.
+            </p>
+          </div>
+          <div class="pt-[120px] w-full max-w-[87px]">
+            <img src="/svg/link.svg" alt="link icon" />
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide
+        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
+        <div class="w-full flex items-start">
+          <div class="w-full">
+            <img
+              src="/img/journey15.webp"
+              alt="journey one img"
+              class="w-full max-w-[280px]" />
+            <p class="mt-5 text-lg/[140%]">
+              She is a professor of Food and Tourism Studies at Centennial College.
+            </p>
+          </div>
+          <div class="pt-[120px] w-full max-w-[87px]">
+            <img src="/svg/link.svg" alt="link icon" />
+          </div>
+        </div>
+      </SwiperSlide>
     </Swiper>
   </div>
 </template>

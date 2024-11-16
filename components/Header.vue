@@ -38,7 +38,7 @@ onUnmounted(() => {
       <div class="flex lg:flex-1">
         <nuxt-link to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Ozoz Sokoh</span>
-          <img class="w-[173px]" src="/img/logo.png" alt="logo" />
+          <img class="w-[210px]" src="/img/logo.png" alt="logo" />
         </nuxt-link>
       </div>
       <div class="hidden lg:flex lg:gap-x-3">
@@ -86,7 +86,7 @@ onUnmounted(() => {
         <div class="flex items-center justify-between gap-x-6">
           <nuxt-link to="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Ozoz Sokoh</span>
-            <img class="w-[173px]" src="/img/logo.png" alt="logo" />
+            <img class="w-[210px]" src="/img/logo.png" alt="logo" />
           </nuxt-link>
 
           <button

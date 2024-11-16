@@ -46,7 +46,7 @@
             visuals, capturing the nation’s food-loving spirit and cultural
             richness. Preorder now. The book is officially on sale
             <span class="text-red font-bold">March 18, 2025</span>. All the
-            details and links for you to pre-order are here.!
+            details and links for you to pre-order are here.
           </p>
           <div class="">
             <h3 class="font-medium text-2xl text-red">United States</h3>
@@ -161,7 +161,7 @@
                 to="#"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                QBD (link coming soon)
+                QBD (Coming soon)
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>
@@ -185,7 +185,7 @@
                 to="https://www.narrativelandscape.com/"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Narrative Landscape Press (Coming soon on)
+                Narrative Landscape Press (Coming soon)
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>

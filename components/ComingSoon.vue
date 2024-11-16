@@ -26,21 +26,22 @@
       <h2 class="text-red-2 text-[60px]/[120%] font-semibold tracking-[-0.9px]">
         Coming Soon!
       </h2>
-      <p class="text-brown text-lg/[140%] md:text-xl/[140%] tracking-[-0.3px] mt-6 mb-10 w-full max-w-[423px]">
-        We're working tirelessly and we'll soon allow you 
-        to come tour with us!
+      <p
+        class="text-brown text-lg/[140%] md:text-xl/[140%] tracking-[-0.3px] mt-6 mb-10 w-full max-w-[423px]">
+        Sign up for our newsletter to receive launch and event information
       </p>
       <div class="flex flex-col md:flex-row w-full md:w-auto gap-3">
         <nuxt-link
           to="/"
-          class="rounded-2xl bg-blue border border-blue p-6 text-sm font-medium text-white shadow-sm hover:bg-white hover:text-blue focus-visible:outline focus-visible:outline-2 flex gap-2 items-center focus-visible:outline-offset-2 focus-visible:outline-indigo-600 justify-center"
+          class="rounded-2xl bg-transparent border border-grey-5 p-6 text-lg font-medium flex gap-2 items-center text-blue-3 shadow-sm hover:bg-blue-3 hover:text-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           ><Icon name="material-symbols:arrow-left-alt" size="20" /> Go
-          home</nuxt-link
+          back</nuxt-link
         >
         <nuxt-link
-          to="/"
-          class="rounded-2xl bg-transparent border border-grey-5 p-6 text-sm font-medium text-blue-3 shadow-sm hover:bg-blue-3 hover:text-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
-          >Go back</nuxt-link
+          to="https://kitchenbutterfly.us8.list-manage.com/subscribe?u=6d556d46e3c5b5e41d3b7a8ba&id=54759f9d2e"
+          target="_blank"
+          class="rounded-2xl bg-blue border border-blue p-6 text-lg font-medium text-white shadow-sm hover:bg-white hover:text-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 justify-center"
+          >Subscribe</nuxt-link
         >
       </div>
     </div>
