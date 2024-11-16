@@ -241,8 +241,19 @@ const breakpoints = ref({
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
               In <span class="font-bold">2014</span>, she presented her work
-              Journey by Plate at TEDx Port Harcourt. In it, she documents the
-              origins, philosophy and practice of her ongoing
+              Journey by Plate at
+              <nuxt-link
+                to="https://www.youtube.com/watch?v=TiSluxo1Bds"
+                target="_blank"
+                class="text-red-2">
+                TEDx
+                <Icon
+                  name="material-symbols:arrow-outward"
+                  size="16"
+                  class="pt-2" />
+              </nuxt-link>
+              Port Harcourt. In it, she documents the origins, philosophy and
+              practice of her ongoing
               <span class="text-red-2 italic">#NewNigerianKitchen</span> 
               project.
             </p>
@@ -281,7 +292,10 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              In Her interest in curatorial work has led to the development of exhibitions including the <span class="font-bold">2019</span> Food is More Than Eating Exhibition held as part of the Abori Food System Design Summit.
+              In Her interest in curatorial work has led to the development of
+              exhibitions including the <span class="font-bold">2019</span> Food
+              is More Than Eating Exhibition held as part of the Abori Food
+              System Design Summit.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -298,7 +312,22 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              In Sokoh launched Feast Afrique in <span class="font-bold">2020</span>, an online platform dedicated to the documentation and celebration of West African Food and Drink. A digital library of <span class="font-bold">240</span>+ West African and diasporic culinary and literary resources are a key part of this work.
+              In Sokoh launched
+              <nuxt-link
+                to="https://www.feastafrique.com/"
+                target="_blank"
+                class="text-red-2"
+                >Feast Afrique
+                <Icon
+                  name="material-symbols:arrow-outward"
+                  size="16"
+                  class="pt-2"
+              /></nuxt-link>
+              in <span class="font-bold">2020</span>, an online platform
+              dedicated to the documentation and celebration of West African
+              Food and Drink. A digital library of
+              <span class="font-bold">240</span>+ West African and diasporic
+              culinary and literary resources are a key part of this work.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -315,7 +344,9 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              In <span class="font-bold">2021</span>, Ozoz graduated with Honors from the Museum and Cultural Management Program at Centennial College, Canada.
+              In <span class="font-bold">2021</span>, Ozoz graduated with Honors
+              from the Museum and Cultural Management Program at Centennial
+              College, Canada.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -332,7 +363,8 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              She is a professor of Food and Tourism Studies at Centennial College.
+              She is a professor of Food and Tourism Studies at Centennial
+              College.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">

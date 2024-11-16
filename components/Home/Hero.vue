@@ -32,8 +32,15 @@ const goToAbout = () => {
         alt="branch image"
         class="absolute bottom-0 right-40 rotate-180 z-0" />
       <div
-        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 lg:flex flex-wrap lg:items-start lg:gap-x-10 xl:px-0 lg:py-40">
-        <div class="mx-auto w-full max-w-[600px] lg:mx-0 lg:flex-auto">
+        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 flex flex-col md:flex-row flex-wrap lg:items-start lg:justify-between lg:gap-x-10 xl:px-0 lg:py-40">
+        <div
+          class="mt-16 order-2 md:order-1 relative sm:mt-24 lg:mt-0 flex justify-start">
+          <img
+            src="/img/chop-bookk.webp"
+            alt="chop book"
+            class="w-4/5 mx-auto md:mx-0 md:w-full max-w-[364px]" />
+        </div>
+        <div class="mx-auto w-full order-1 md:order-2 max-w-[600px] lg:mx-0 lg:flex-auto">
           <h1
             class="mt-10 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
             Chop Chop
@@ -49,20 +56,13 @@ const goToAbout = () => {
             <div class="mt-10 flex items-center gap-x-6">
               <nuxt-link
                 to="/book"
-                class="rounded-2xl bg-transparent border border-blue px-10 py-4 text-sm font-medium text-blue shadow-sm hover:bg-blue hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                class="rounded-2xl bg-transparent border border-blue px-10 py-4 font-medium text-blue shadow-sm hover:bg-blue hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >More info</nuxt-link
               >
             </div>
           </div>
         </div>
-        <div
-          class="mt-16 relative sm:mt-24 lg:mt-0 flex justify-start lg:shrink-0 lg:grow">
-          <img
-            src="/img/chop-bookk.webp"
-            alt="chop book"
-            class="w-full max-w-[364px]" />
-        </div>
-        <div class="flex flex-col gap-6 mt-10 text-lg font-medium text-blue">
+        <div class="flex flex-col order-3 gap-6 mt-10 text-lg font-medium text-blue">
           <h3 class="text-2xl text-red">United States</h3>
           <nuxt-link
             to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan"

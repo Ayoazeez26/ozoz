@@ -155,6 +155,18 @@
             </div>
           </div>
           <div class="">
+            <h3 class="font-medium text-2xl text-red">Nigeria</h3>
+            <div class="flex flex-wrap gap-4 mt-2 text-blue">
+              <nuxt-link
+                to="https://www.narrativelandscape.com/"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Narrative Landscape Press (Coming soon)
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+            </div>
+          </div>
+          <div class="">
             <h3 class="font-medium text-2xl text-red">Australia</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
@@ -174,18 +186,6 @@
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
                 Mighty Ape
-                <Icon name="material-symbols:arrow-outward" size="20" />
-              </nuxt-link>
-            </div>
-          </div>
-          <div class="">
-            <h3 class="font-medium text-2xl text-red">Nigeria</h3>
-            <div class="flex flex-wrap gap-4 mt-2 text-blue">
-              <nuxt-link
-                to="https://www.narrativelandscape.com/"
-                target="_blank"
-                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Narrative Landscape Press (Coming soon)
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>
