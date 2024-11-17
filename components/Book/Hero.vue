@@ -31,10 +31,10 @@
             class="text-pretty text-6xl/[120%] font-medium tracking-tight text-red sm:text-[64px]/[120%] lg:pr-10 mb-12 md:mb-0">
             Chop Chop: Cooking the Food of Nigeria
           </h1>
-          <img
+          <!-- <img
             src="/img/chop-chop.webp"
             alt="chop book"
-            class="max-w-[521px] md:hidden w-full" />
+            class="max-w-[521px] md:hidden w-full" /> -->
           <p class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
             Chop Chop celebrates the vibrant, diverse world of Nigerian cuisine,
             featuring dishes like spiced beef suya, rich egusi soup, jollof
