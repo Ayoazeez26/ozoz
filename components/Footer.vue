@@ -48,7 +48,7 @@ const navigation = {
     { name: "Kitchen Butterfly", href: "https://www.kitchenbutterfly.com/" },
     { name: "Feast Afrique", href: "https://www.feastafrique.com/" },
     { name: "A-Z Glossary", href: "/glossary" },
-    { name: "Privacy Policy", href: "/about" },
+    { name: "Privacy Policy", href: "/privacy" },
   ],
   social: [
     {

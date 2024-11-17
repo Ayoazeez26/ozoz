@@ -95,12 +95,11 @@ const formData = ref({
                 Send message
               </button>
             </div>
-            <!-- <p class="mt-4 text-sm/6 text-gray-500">
+            <p class="mt-4 text-sm/6 text-brown">
               By submitting this form, I agree to the
-              <a href="#" class="font-semibold text-indigo-600"
-                >privacy&nbsp;policy</a
-              >.
-            </p> -->
+              <nuxt-link to="/privacy" target="_blank" class="text-red-2">privacy&nbsp;policy</nuxt-link>
+              
+            </p>
           </form>
 
         </div>
