@@ -21,7 +21,7 @@
         <div
           class="lg:sticky lg:self-start lg:top-[200px] mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow hidden lg:block">
           <img
-            src="/img/chop-bookk.webp"
+            src="/img/chop-book.webp"
             alt="chop book"
             class="w-full max-w-[401px]" />
         </div>

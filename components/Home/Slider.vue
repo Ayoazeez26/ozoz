@@ -29,7 +29,7 @@ const breakpoints = ref({
 });
 </script>
 <template>
-  <div class="w-[287px] mx-auto md:w-full max-w-[1068px] text-brown">
+  <div class="w-[287px] mx-auto md:w-full max-w-[1101px] text-brown">
     <button
       @click="swipePrev()"
       :class="{
@@ -78,11 +78,11 @@ const breakpoints = ref({
       <SwiperSlide
         class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
         <div class="w-full flex items-start">
-          <div class="w-full flex flex-col pt-20 justify-center items-center">
+          <div class="w-full pt-20">
             <img
               src="/img/journey2.webp"
               alt="journey one img"
-              class="max-w-[177px]" />
+              class="max-w-[280px] w-full" />
             <p class="mt-5 text-lg/[140%]">
               She didn’t enjoy food until <span class="font-bold">1985</span>,
               when she was nine years old. She fell in love with a hamburger and
@@ -97,11 +97,11 @@ const breakpoints = ref({
       <SwiperSlide
         class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
         <div class="w-full flex items-start">
-          <div class="w-full">
+          <div class="w-full flex flex-col justify-center items-center">
             <img
-              src="/img/journey3&4.webp"
+              src="/img/journey3.webp"
               alt="journey one img"
-              class="w-full max-w-[280px]" />
+              class="w-full max-w-[177px]" />
             <p class="mt-5 text-lg/[140%]">
               Ozoz did not like Chemistry so opted out of Quantity surveying,
               studying Urban & Regional Planning instead at Obafemi Awolowo
@@ -119,7 +119,7 @@ const breakpoints = ref({
         <div class="w-full flex items-start">
           <div class="w-full">
             <img
-              src="/img/journey3&4.webp"
+              src="/img/journey4.webp"
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
@@ -162,7 +162,7 @@ const breakpoints = ref({
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
               Ozoz worked as a geologist in Nigeria, then moved abroad. In
-              <span class="font-bold">2009</span>,, she began writing Kitchen
+              <span class="font-bold">2009</span>, she began writing Kitchen
               Butterfly, her food blog while living and working in The
               Netherlands.
             </p>
@@ -254,7 +254,7 @@ const breakpoints = ref({
               </nuxt-link>
               Port Harcourt. In it, she documents the origins, philosophy and
               practice of her ongoing
-              <span class="text-red-2 italic">#NewNigerianKitchen</span> 
+              <span class="text-red-2">#NewNigerianKitchen</span> 
               project.
             </p>
           </div>
@@ -273,7 +273,7 @@ const breakpoints = ref({
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
               In the intervening years, Sokoh has created experiences including
-              <span class="text-red-2 italic">#EattheBooks</span> , celebrating
+              <span class="text-red-2">#EattheBooks</span> , celebrating
               literary and visual works and translating them to tastes in food
               and drink, at events and festivals across the world.
             </p>
@@ -312,7 +312,7 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              In Sokoh launched
+              Sokoh launched
               <nuxt-link
                 to="https://www.feastafrique.com/"
                 target="_blank"
@@ -326,7 +326,7 @@ const breakpoints = ref({
               in <span class="font-bold">2020</span>, an online platform
               dedicated to the documentation and celebration of West African
               Food and Drink. A digital library of
-              <span class="font-bold">240</span>+ West African and diasporic
+              <span class="font-bold">250</span>+ West African and diasporic
               culinary and literary resources are a key part of this work.
             </p>
           </div>

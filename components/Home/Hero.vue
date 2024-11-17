@@ -36,7 +36,7 @@ const goToAbout = () => {
         <div
           class="mt-16 order-2 md:order-1 relative sm:mt-24 lg:mt-0 flex justify-start">
           <img
-            src="/img/chop-bookk.webp"
+            src="/img/chop-book.webp"
             alt="chop book"
             class="w-4/5 mx-auto md:mx-0 md:w-full max-w-[364px]" />
         </div>
