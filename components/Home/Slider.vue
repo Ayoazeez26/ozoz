@@ -103,7 +103,7 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[177px]" />
             <p class="mt-5 text-lg/[140%]">
-              Ozoz did not like Chemistry so opted out of Quantity surveying,
+              Ozoz did not like Chemistry so opted out of Quantity Surveying,
               studying Urban & Regional Planning instead at Obafemi Awolowo
               University, Ile-Ife until <span class="font-bold">1997</span>. She
               loved cooking for her friends.
@@ -273,7 +273,7 @@ const breakpoints = ref({
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
               In the intervening years, Sokoh has created experiences including
-              <span class="text-red-2">#EattheBooks</span> , celebrating
+              <span class="text-red-2">#EattheBooks</span>, celebrating
               literary and visual works and translating them to tastes in food
               and drink, at events and festivals across the world.
             </p>
@@ -292,7 +292,7 @@ const breakpoints = ref({
               alt="journey one img"
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
-              In Her interest in curatorial work has led to the development of
+              Her interest in curatorial work has led to the development of
               exhibitions including the <span class="font-bold">2019</span> Food
               is More Than Eating Exhibition held as part of the Abori Food
               System Design Summit.

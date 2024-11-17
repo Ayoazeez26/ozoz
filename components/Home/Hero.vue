@@ -38,7 +38,7 @@ const goToAbout = () => {
           <img
             src="/img/chop-book.webp"
             alt="chop book"
-            class="w-4/5 mx-auto md:mx-0 md:w-full max-w-[364px]" />
+            class="w-4/5 mx-auto md:mx-0 md:w-full md:max-w-[364px]" />
         </div>
         <div class="mx-auto w-full order-1 md:order-2 max-w-[600px] lg:mx-0 lg:flex-auto">
           <h1
