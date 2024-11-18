@@ -115,5 +115,17 @@
         </div>
       </div>
     </div>
+    <div
+      class="mx-auto max-w-7xl w-full px-6 py-16 sm:py-32 flex flex-col gap-16 lg:items-center justify-between overflow-x-hidden lg:px-6 xl:px-0 lg:py-20 relative">
+      <img
+        src="/svg/bg-lines.svg"
+        alt="lines"
+        class="absolute -top-40 left-0 right-0 z-0" />
+      <h2
+        class="text-pretty text-5xl text-center font-medium tracking-tight text-red sm:text-7xl">
+        My Journey
+      </h2>
+      <HomeSlider />
+    </div>
   </div>
 </template>

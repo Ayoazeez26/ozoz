@@ -48,7 +48,7 @@ const goToAbout = () => {
           <div class="">
             <p
               class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
-              Travel to Nigeria by plate with my debut cookbook, Chop Chop. Chop
+              Travel to Nigeria by plate with my debut cookbook, <span class="text-red font-bold">Chop Chop</span>. Chop
               Chop is available to pre-order now. The book is officially on sale
               <span class="text-red font-bold">March 18, 2025</span>. All the
               details and links food you to pre-order are here.

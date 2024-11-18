@@ -140,7 +140,9 @@ const swipeNext = () => {
                         src="/img/museumm-mob.webp"
                         alt="museum image"
                         class="w-full md:hidden" />
-                      <div
+                      <nuxt-link
+                        to="https://museumofglobalfoodways.com/"
+                        target="_blank"
                         class="flex flex-col gap-3 md:pr-6 px-4 md:px-0 pb-6 md:pb-0 text-center md:text-left">
                         <div
                           class="flex gap-4 items-center justify-center md:justify-start">
@@ -153,7 +155,7 @@ const swipeNext = () => {
                           class="text-brown text-lg/[140%] text-ellipsis line-clamp-2">
                           Coming Soon
                         </p>
-                      </div>
+                      </nuxt-link>
                     </div>
                   </div>
                 </div>
@@ -341,9 +343,9 @@ const swipeNext = () => {
                     <div
                       class="flex flex-col md:flex-row items-center gap-6 md:gap-10 rounded-3xl border border-grey-3 bg-grey-4 w-full">
                       <img
-                        src="/img/museumm.webp"
+                        src="/img/anthony.webp"
                         alt="museum image"
-                        class="w-full hidden md:block max-w-[280px]" />
+                        class="w-full md:max-w-[280px]" />
                       <img
                         src="/img/museumm-mob.webp"
                         alt="museum image"

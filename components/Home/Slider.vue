@@ -144,7 +144,16 @@ const breakpoints = ref({
               During her time in the UK, she discovered food as comfort, and
               began cooking Nigerian dishes to fight homesickness. In
               <span class="font-bold">1998</span>, she created her first recipe,
-              tomato salsa, which she still makes today.
+              <nuxt-link
+                to="https://www.kitchenbutterfly.com/2010/el-salvador-platanos-fritos-and-me/"
+                target="_blank"
+                class="text-red-2"
+                >tomato salsa
+                <Icon
+                  name="material-symbols:arrow-outward"
+                  size="16"
+                  class="pt-2" /></nuxt-link
+              >, which she still makes today.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -201,8 +210,17 @@ const breakpoints = ref({
             <p class="mt-5 text-lg/[140%]">
               Her love for food history and its importance as cultural identity
               began in <span class="font-bold">2009, 2010</span> when she
-              discovered Brazilian Acarajé, and its origins in Nigerian Àkàrà.
-              This was a turning point in her food journey.
+              discovered Brazilian Acarajé, and its origins in
+              <nuxt-link
+                to="https://www.kitchenbutterfly.com/2010/akara-acaraje-the-brazilian-nigerian-connection/"
+                target="_blank"
+                class="text-red-2">
+                Nigerian Àkàrà
+                <Icon
+                  name="material-symbols:arrow-outward"
+                  size="16"
+                  class="pt-2" /> </nuxt-link
+              >. This was a turning point in her food journey.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -222,8 +240,17 @@ const breakpoints = ref({
               Upon her return to Nigeria in <span class="font-hold">2011</span>,
               she deepened her food research on Nigerian ingredients,
               techniques, practices and more, in an attempt to document and
-              codify the cuisine, including building Nigeria’s first seasonal
-              produce calendar.
+              codify the cuisine, including building
+              <nuxt-link
+                to="https://www.kitchenbutterfly.com/2018/version-1-3-nigerian-seasonal-produce-calendar-2/"
+                target="_blank"
+                class="text-red-2">
+                Nigeria’s first seasonal produce calendar
+                <Icon
+                  name="material-symbols:arrow-outward"
+                  size="16"
+                  class="pt-2" /> </nuxt-link
+              >.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
@@ -254,7 +281,16 @@ const breakpoints = ref({
               </nuxt-link>
               Port Harcourt. In it, she documents the origins, philosophy and
               practice of her ongoing
-              <span class="text-red-2">#NewNigerianKitchen</span> 
+              <nuxt-link
+                to="https://www.kitchenbutterfly.com/philosophy-practice/"
+                target="_blank"
+                class="text-red-2">
+                #NewNigerianKitchen
+                <Icon
+                  name="material-symbols:arrow-outward"
+                  size="16"
+                  class="pt-2" />
+              </nuxt-link>
               project.
             </p>
           </div>
@@ -273,9 +309,18 @@ const breakpoints = ref({
               class="w-full max-w-[280px]" />
             <p class="mt-5 text-lg/[140%]">
               In the intervening years, Sokoh has created experiences including
-              <span class="text-red-2">#EattheBooks</span>, celebrating
-              literary and visual works and translating them to tastes in food
-              and drink, at events and festivals across the world.
+              <nuxt-link
+                to="https://www.instagram.com/explore/search/keyword/?q=%23foodmeetsliterature"
+                target="_blank"
+                class="text-red-2">
+                #EattheBooks
+                <Icon
+                  name="material-symbols:arrow-outward"
+                  size="16"
+                  class="pt-2" /> </nuxt-link
+              >, celebrating literary and visual works and translating them to
+              tastes in food and drink, at events and festivals across the
+              world.
             </p>
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brown-3 py-16 sm:py-24 relative">
+  <div class="bg-brown-3 py-16 sm:py-24 relative overflow-hidden">
     <img
       src="/svg/bg-lines.svg"
       alt="lines"

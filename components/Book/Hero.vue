@@ -31,10 +31,6 @@
             class="text-pretty text-6xl/[120%] font-medium tracking-tight text-red sm:text-[64px]/[120%] lg:pr-10 mb-12 md:mb-0">
             Chop Chop: Cooking the Food of Nigeria
           </h1>
-          <!-- <img
-            src="/img/chop-chop.webp"
-            alt="chop book"
-            class="max-w-[521px] md:hidden w-full" /> -->
           <p class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
             Chop Chop celebrates the vibrant, diverse world of Nigerian cuisine,
             featuring dishes like spiced beef suya, rich egusi soup, jollof
@@ -135,7 +131,7 @@
                 to="https://www.waterstones.com/book/chop-chop/ozoz-sokoh/9781648291890"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Water Stones
+                Waterstones
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
               <nuxt-link
@@ -170,7 +166,7 @@
             <h3 class="font-medium text-2xl text-red">Australia</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="#"
+                to="https://www.qbd.com.au/"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
                 QBD (Coming soon)
@@ -187,6 +183,16 @@
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
                 Mighty Ape
                 <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="font-medium text-2xl text-red">Other Territories</h3>
+            <div class="flex flex-wrap gap-4 mt-2 text-blue">
+              <nuxt-link
+                to="#"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Check with your closest local bookstore
               </nuxt-link>
             </div>
           </div>
