@@ -32,23 +32,27 @@ const goToAbout = () => {
         alt="branch image"
         class="absolute bottom-0 right-40 rotate-180 z-0" />
       <div
-        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 flex flex-col md:flex-row flex-wrap lg:items-start lg:justify-between lg:gap-x-10 xl:px-0 lg:py-40">
+        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 flex flex-col md:flex-row flex-wrap lg:justify-between lg:items-center lg:gap-x-2 xl:px-0 lg:py-40">
         <div
-          class="mt-16 order-2 md:order-1 relative sm:mt-24 lg:mt-0 flex justify-start">
+          class="mt-16 order-2 md:order-1 relative sm:mt-24 lg:mt-0 flex justify-start self-start">
           <img
             src="/img/chop-book.webp"
             alt="chop book"
             class="w-4/5 mx-auto md:mx-0 md:w-full md:max-w-[364px]" />
         </div>
-        <div class="mx-auto w-full order-1 md:order-2 max-w-[600px] lg:mx-0 lg:flex-auto">
+        <div
+          class="mx-auto w-full order-1 md:order-2 max-w-[585px] lg:mx-0 lg:flex-auto">
           <h1
-            class="mt-10 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
+            class="mt-10 lg:mt-0 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
             Chop Chop
           </h1>
           <div class="">
             <p
               class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
-              Travel to Nigeria, by plate with  <span class="text-red font-bold">Chop Chop</span>, my debut cookbook which is available to pre-order now. The book is officially on sale
+              Travel to Nigeria, by plate with
+              <span class="text-red font-bold">Chop Chop</span>, my debut
+              cookbook which is available to pre-order now. The book is
+              officially on sale
               <span class="text-red font-bold">March 18, 2025</span>. All the
               details are here, including links for where you can pre-order.
             </p>
@@ -61,7 +65,8 @@ const goToAbout = () => {
             </div>
           </div>
         </div>
-        <div class="flex flex-col order-3 gap-6 mt-10 text-lg font-medium text-blue">
+        <div
+          class="flex flex-col order-3 gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue">
           <h3 class="text-2xl text-red">United States</h3>
           <nuxt-link
             to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan"
@@ -71,32 +76,31 @@ const goToAbout = () => {
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
           <nuxt-link
-            to="https://www.amazon.com/gp/product/1648291899?tag=hacboogrosit-20"
-            target="_blank"
-            class="flex items-center gap-3 p-2">
-            Amazon
-            <Icon name="material-symbols:arrow-outward" size="20" />
-          </nuxt-link>
-          <nuxt-link
             to="https://www.barnesandnoble.com/w/chop-chop-ozoz-sokoh/1145934034;jsessionid=F8B6CB4B7D560C9E313FD3BEBD33A386.prodny_store01-atgap05?ean=9781648291890&st=AFF&2sid=Hachette%20Book%20Group_8040641_NA&sourceId=AFFHachette%20Book%20Group"
             target="_blank"
             class="flex items-center gap-3 p-2">
             Barnes & Noble
+            <Icon name="material-symbols:arrow-outward" size="20" /> </nuxt-link
+          ><nuxt-link
+            to="https://www.booksamillion.com/p/9781648291890?cjdata=MXxOfDB8WXww&AID=11552245&PID=8040641&cjevent=94a30174721611ef8328b0cd0a82b820"
+            target="_blank"
+            class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+            Books-a-Million
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
           <h3 class="text-2xl text-red">Canada</h3>
           <nuxt-link
-            to="https://www.indigo.ca/en-ca/chop-chop-cooking-the-food-of-nigeria/9780525612544.html"
+            to="https://www.adifferentbooklist.com/item/BXWUqR7ec6jvgFHW4zLVlQ"
             target="_blank"
-            class="flex items-center gap-3 p-2">
-            Indigo
+            class="flex items-center gap-3 p-2 font-medium">
+            A Different Booklist
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
           <nuxt-link
-            to="https://www.amazon.ca/Chop-Cooking-Food-Nigeria/dp/0525612548"
+            to="https://anotherstory.ca/item/BXWUqR7ec6jvgFHW4zLVlQ"
             target="_blank"
-            class="flex items-center gap-3 p-2">
-            Amazon.ca
+            class="flex items-center gap-3 p-2 font-medium">
+            Another Story Bookshop
             <Icon name="material-symbols:arrow-outward" size="20" />
           </nuxt-link>
           <nuxt-link

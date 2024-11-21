@@ -106,13 +106,6 @@ const saveImg = (img: string) => {
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
               <nuxt-link
-                to="https://www.amazon.com/gp/product/1648291899?tag=hacboogrosit-20"
-                target="_blank"
-                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Amazon
-                <Icon name="material-symbols:arrow-outward" size="20" />
-              </nuxt-link>
-              <nuxt-link
                 to="https://www.barnesandnoble.com/w/chop-chop-ozoz-sokoh/1145934034;jsessionid=F8B6CB4B7D560C9E313FD3BEBD33A386.prodny_store01-atgap05?ean=9781648291890&st=AFF&2sid=Hachette%20Book%20Group_8040641_NA&sourceId=AFFHachette%20Book%20Group"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
@@ -133,30 +126,23 @@ const saveImg = (img: string) => {
                 Bookshop
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
+              <nuxt-link
+                to="https://www.amazon.com/gp/product/1648291899?tag=hacboogrosit-20"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Amazon
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
             </div>
           </div>
           <div class="">
             <h3 class="font-medium text-2xl text-red">Canada</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="https://www.indigo.ca/en-ca/chop-chop-cooking-the-food-of-nigeria/9780525612544.html"
+                to="https://www.adifferentbooklist.com/item/BXWUqR7ec6jvgFHW4zLVlQ"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Indigo
-                <Icon name="material-symbols:arrow-outward" size="20" />
-              </nuxt-link>
-              <nuxt-link
-                to="https://www.amazon.ca/Chop-Cooking-Food-Nigeria/dp/0525612548/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.tt8ATcX0kUJStLcItTPKBZ9RsD___NSX1cVOmbQeEhPVC2wUVUbshC4nsW8qV_SbMk5CMY0JAijRzyquk8rVcf_CuPMNtKjSRT5bEXwvNrNb2YvuhXHn3nSBND9wfi3gmj317RO0azeQ-k7tHx8Gakd5HnTJInnrleysTUP4qyucUhH0ZyETYWHUHjBGkoKM6l8BGEc51p9TwCLM6kL7_3fBgVNyoQEGPOpuyeiEq6gpqn6wswLwD1twqvisQQHrU3NhuUCgeNzg0RtfC2GbnLFetgZ3A3RKx3hI0XQ5mf0.OYdLXV-JfHJOuPrIdLZxGfMoBV3YUtqOIT3BUoR8IIY&qid=1719862555&sr=8-1"
-                target="_blank"
-                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Amazon.ca
-                <Icon name="material-symbols:arrow-outward" size="20" />
-              </nuxt-link>
-              <nuxt-link
-                to="https://shoplocal.bookmanager.com/isbn/9780525612544"
-                target="_blank"
-                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Shop Local
+                A Different Booklist
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
               <nuxt-link
@@ -167,10 +153,24 @@ const saveImg = (img: string) => {
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
               <nuxt-link
-                to="https://www.adifferentbooklist.com/item/BXWUqR7ec6jvgFHW4zLVlQ"
+                to="https://shoplocal.bookmanager.com/isbn/9780525612544"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                A Different Booklist
+                Shop Local
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+              <nuxt-link
+                to="https://www.amazon.ca/Chop-Cooking-Food-Nigeria/dp/0525612548/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.tt8ATcX0kUJStLcItTPKBZ9RsD___NSX1cVOmbQeEhPVC2wUVUbshC4nsW8qV_SbMk5CMY0JAijRzyquk8rVcf_CuPMNtKjSRT5bEXwvNrNb2YvuhXHn3nSBND9wfi3gmj317RO0azeQ-k7tHx8Gakd5HnTJInnrleysTUP4qyucUhH0ZyETYWHUHjBGkoKM6l8BGEc51p9TwCLM6kL7_3fBgVNyoQEGPOpuyeiEq6gpqn6wswLwD1twqvisQQHrU3NhuUCgeNzg0RtfC2GbnLFetgZ3A3RKx3hI0XQ5mf0.OYdLXV-JfHJOuPrIdLZxGfMoBV3YUtqOIT3BUoR8IIY&qid=1719862555&sr=8-1"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Amazon.ca
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+              <nuxt-link
+                to="https://www.indigo.ca/en-ca/chop-chop-cooking-the-food-of-nigeria/9780525612544.html"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Indigo
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>
@@ -179,10 +179,10 @@ const saveImg = (img: string) => {
             <h3 class="font-medium text-2xl text-red">United Kingdom</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="https://www.waterstones.com/book/chop-chop/ozoz-sokoh/9781648291890"
+                to="https://www.foyles.co.uk/book/chop-chop/ozoz-sokoh/9781648291890"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Waterstones
+                Foyles
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
               <nuxt-link
@@ -193,10 +193,22 @@ const saveImg = (img: string) => {
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
               <nuxt-link
-                to="https://www.foyles.co.uk/book/chop-chop/ozoz-sokoh/9781648291890"
+                to="https://www.waterstones.com/book/chop-chop/ozoz-sokoh/9781648291890"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Foyles
+                Waterstones
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+            </div>
+          </div>
+          <div class="">
+            <h3 class="font-medium text-2xl text-red">New Zealand</h3>
+            <div class="flex flex-wrap gap-4 mt-2 text-blue">
+              <nuxt-link
+                to="https://www.mightyape.co.nz/product/chop-chop-hardback/38994783"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Mighty Ape
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>
@@ -223,16 +235,11 @@ const saveImg = (img: string) => {
                 QBD (Coming soon)
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
-            </div>
-          </div>
-          <div class="">
-            <h3 class="font-medium text-2xl text-red">New Zealand</h3>
-            <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="https://www.mightyape.co.nz/product/chop-chop-hardback/38994783"
+                to="https://www.amazon.com.au/Chop-Cooking-Food-Nigeria/dp/1648291899/ref=sr_1_1?crid=3VFCG7HOE5FUH&dib=eyJ2IjoiMSJ9.nfoXiAR_OcteWLTg8EROXw.AsFo3bH4Ot84Od9CnkdzevHvbm00nxDgNq6yj7Wt_X4&dib_tag=se&keywords=9781648291890&qid=1731968746&sprefix=9781648291890%2Caps%2C263&sr=8-1"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Mighty Ape
+                Amazon AU
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>
