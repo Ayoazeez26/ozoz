@@ -366,6 +366,12 @@ const swipeNext = () => {
                             class="text-red font-medium text-xl md:text-[28px] text-ellipsis line-clamp-1">
                             Anthony Bourdain’s Parts Unknown
                           </h3>
+                          <button
+                            class="text-white rounded-full flex items-center justify-center p-4 bg-blue">
+                            <Icon
+                              name="material-symbols:arrow-outward"
+                              size="20" />
+                          </button>
                         </div>
                         <p
                           class="text-brown text-lg/[140%] text-ellipsis line-clamp-2">
