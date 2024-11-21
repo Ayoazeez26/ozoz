@@ -1,4 +1,21 @@
-<script setup></script>
+<script setup lang="ts">
+const data = useDataStore();
+const thumbImages = ref([
+  "first",
+  "second",
+  "third",
+  "fourth",
+  "fifth",
+  "sixth",
+  "seventh",
+  "eight",
+  "ninth",
+  "tenth",
+]);
+const saveImg = (img: string) => {
+  data.clickedImg = img;
+};
+</script>
 
 <template>
   <div class="bg-brown-3">
@@ -24,6 +41,20 @@
             src="/img/chop-book.webp"
             alt="chop book"
             class="w-full max-w-[401px]" />
+          <div class="mt-10 w-full max-w-[521px]">
+            <h2 class="font-medium text-[32px]/[38.4px] text-red">
+              Have a Sneak Peek
+            </h2>
+            <div class="mt-6 flex gap-4 flex-wrap">
+              <img
+                v-for="(img, index) in thumbImages"
+                :key="index"
+                @click="saveImg(img)"
+                :src="`/img/${img}-thumb.webp`"
+                :alt="`${img} thumbnail`"
+                class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 w-[118px]" />
+            </div>
+          </div>
         </div>
         <div
           class="mx-auto max-w-[695px] lg:mx-0 gap-4 flex flex-col lg:flex-auto">
@@ -31,6 +62,26 @@
             class="text-pretty text-6xl/[120%] font-medium tracking-tight text-red sm:text-[64px]/[120%] lg:pr-10 mb-12 md:mb-0">
             Chop Chop: Cooking the Food of Nigeria
           </h1>
+          <div class="lg:hidden w-full">
+            <img
+              src="/img/chop-book.webp"
+              alt="chop book"
+              class="w-full max-w-[401px] mx-auto" />
+            <div class="mt-10 w-full">
+              <h2 class="font-medium text-[32px]/[38.4px] text-red">
+                Have a Sneak Peek
+              </h2>
+              <div class="mt-6 flex gap-4 flex-wrap">
+                <img
+                  v-for="(img, index) in thumbImages"
+                  :key="index"
+                  @click="saveImg(img)"
+                  :src="`/img/${img}-thumb.webp`"
+                  :alt="`${img} thumbnail`"
+                  class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 w-[118px]" />
+              </div>
+            </div>
+          </div>
           <p class="text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
             Chop Chop celebrates the vibrant, diverse world of Nigerian cuisine,
             featuring dishes like spiced beef suya, rich egusi soup, jollof

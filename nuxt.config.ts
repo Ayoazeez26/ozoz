@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-headlessui",
     "nuxt-swiper",
+    "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt"
   ],
   app: {
     head: {
