@@ -39,18 +39,18 @@ const swipeNext = () => {
               class="text-pretty text-5xl font-medium tracking-tight text-red sm:text-7xl">
               Other Work
             </h2>
-            <div class="flex self-end md:self-start mt-6 md:mt-0 gap-3">
+            <div class="hidden md:flex self-end md:self-start mt-6 md:mt-0 gap-3 z-[2]">
               <button
                 @click="swipePrev()"
                 :class="{
-                  'cursor-pointer left-1 flex items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey': true,
+                  'left-1 cursor-pointer flex items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey z-[2]': true,
                 }">
                 <Icon name="material-symbols:arrow-left-alt" size="20" />
               </button>
               <button
                 @click="swipeNext()"
                 :class="{
-                  'cursor-pointer flex right-1 items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey': true,
+                  'right-1 cursor-pointer flex items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey z-[2]': true,
                 }">
                 <Icon
                   name="material-symbols:arrow-left-alt"
@@ -59,7 +59,8 @@ const swipeNext = () => {
               </button>
             </div>
           </div>
-          <div class="mt-8 md:mt-16 w-full max-w-7xl">
+          <div class="mt-8  md:mt-16 w-full max-w-7xl relative">
+            
             <Swiper
               :modules="[SwiperNavigation]"
               :slides-per-view="1"
@@ -352,10 +353,6 @@ const swipeNext = () => {
                         src="/img/anthony.webp"
                         alt="museum image"
                         class="w-full md:max-w-[280px]" />
-                      <img
-                        src="/img/museumm-mob.webp"
-                        alt="museum image"
-                        class="w-full md:hidden" />
                       <nuxt-link
                         to="https://www.youtube.com/watch?v=b4c386YGsGg"
                         target="_blank"
@@ -390,7 +387,7 @@ const swipeNext = () => {
                     <div
                       class="bg-white rounded-3xl border border-grey-3 w-full">
                       <img
-                        src="/img/mag.webp"
+                        src="/img/magg.webp"
                         alt="kitchen butterfly image"
                         class="rounded-3xl" />
                     </div>
@@ -421,6 +418,25 @@ const swipeNext = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
+            <div class="flex justify-center md:hidden self-end md:self-start mt-6 md:mt-0 gap-3 z-[2]">
+              <button
+                @click="swipePrev()"
+                :class="{
+                  'left-1 cursor-pointer flex items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey z-[2]': true,
+                }">
+                <Icon name="material-symbols:arrow-left-alt" size="20" />
+              </button>
+              <button
+                @click="swipeNext()"
+                :class="{
+                  'right-1 cursor-pointer flex items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey z-[2]': true,
+                }">
+                <Icon
+                  name="material-symbols:arrow-left-alt"
+                  size="20"
+                  class="rotate-180" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

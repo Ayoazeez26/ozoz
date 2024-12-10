@@ -11,6 +11,7 @@ const thumbImages = ref([
   "eight",
   "ninth",
   "tenth",
+  "eleventh"
 ]);
 const saveImg = (img: string) => {
   data.clickedImg = img;
@@ -171,6 +172,20 @@ const saveImg = (img: string) => {
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
                 Indigo
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+              <nuxt-link
+                to="https://goodegg.ca/products/chop-chop-cooking-the-food-of-nigeria-coming-mar-15th?srsltid=AfmBOorLhAyiK69fylU0dABEk6TRAD0bBX5PD6ar_PZjzjKTbfFIH1jm"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Good Egg Toronto
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+              <nuxt-link
+                to="https://shop.benmcnallybooks.com/browse/filter/t/ozoz%20sokoh/k/keyword"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                Ben McNally
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>

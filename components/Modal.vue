@@ -8,8 +8,8 @@ const clickedAway = (e: any) => {
 </script>
 
 <template>
-  <div class="bg-black/50 fixed top-0 z-[1000] w-full h-full flex items-center justify-center">
-    <img :src="`/img/${data.clickedImg}.webp`" alt="first large" class="w-11/12 lg:w-7/12" v-click-away="clickedAway">
+  <div class="bg-black/50 fixed top-0 z-[1000] w-full h-full flex items-center justify-center overflow-y-auto">
+    <img :src="`/img/${data.clickedImg}.webp`" alt="first large" :class="` ${data.clickedImg === 'eleventh' ? 'h-full' : 'w-11/12 lg:w-7/12'} `" v-click-away="clickedAway">
   </div>
 </template>
 

@@ -33,7 +33,7 @@
       <div class="flex flex-col md:flex-row w-full md:w-auto gap-3">
         <nuxt-link
           to="/"
-          class="rounded-2xl bg-transparent border border-grey-5 p-6 text-lg font-medium flex gap-2 items-center text-blue-3 shadow-sm hover:bg-blue-3 hover:text-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="rounded-2xl bg-transparent border border-grey-5 p-6 text-lg font-medium flex gap-2 items-center justify-center text-blue-3 shadow-sm hover:bg-blue-3 hover:text-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           ><Icon name="material-symbols:arrow-left-alt" size="20" /> Go
           back</nuxt-link
         >
