@@ -38,7 +38,7 @@
           back</nuxt-link
         >
         <nuxt-link
-          to="https://kitchenbutterfly.us8.list-manage.com/subscribe?u=6d556d46e3c5b5e41d3b7a8ba&id=54759f9d2e"
+          to="https://kitchenbutterfly.myflodesk.com/t4zs0ikqll"
           target="_blank"
           class="rounded-2xl bg-blue border border-blue p-6 text-lg font-medium text-white shadow-sm hover:bg-white hover:text-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 justify-center"
           >Subscribe</nuxt-link
