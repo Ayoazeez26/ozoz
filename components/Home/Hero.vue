@@ -49,7 +49,7 @@ const goToAbout = () => {
           <div class="">
             <p
               class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
-              <span class="text-red font-bold">Signed copies available from</span> <a href="https://www.bembrooklyn.com/products/chop-chop-cooking-the-food-of-nigeria-ozoz-sokoh" target="_blank">BEM Brooklyn</a>  so you can Travel to Nigeria, by plate with <span class="text-red font-bold">Chop Chop, my debut cookbook!</span> The book is officially on sale <span class="text-red font-bold">March 18, 2025.</span> You’ll find all the details here including links for where you can pre-order in Nigeria, and around the world!
+              <span class="text-red font-bold">Signed copies available from <a href="https://www.bembrooklyn.com/products/chop-chop-cooking-the-food-of-nigeria-ozoz-sokoh" target="_blank" class="underline">BEM Brooklyn</a></span>  so you can Travel to Nigeria, by plate with <span class="text-red font-bold">Chop Chop, my debut cookbook!</span> The book is officially on sale <span class="text-red font-bold">March 18, 2025.</span> You’ll find all the details here including links for where you can pre-order in Nigeria, and around the world!
             </p>
             <div class="mt-10 flex items-center gap-x-6">
               <nuxt-link
