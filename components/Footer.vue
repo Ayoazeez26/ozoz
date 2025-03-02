@@ -28,7 +28,7 @@
         </a>
       </div>
       <p class="mt-10 text-center text-sm/6 text-white">
-        &copy; 2024 Ozoz Sokoh. All rights reserved.
+        &copy; 2025 Ozoz Sokoh. All rights reserved.
       </p>
     </div>
     <img

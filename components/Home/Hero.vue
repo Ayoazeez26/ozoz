@@ -49,12 +49,7 @@ const goToAbout = () => {
           <div class="">
             <p
               class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
-              Travel to Nigeria, by plate with
-              <span class="text-red font-bold">Chop Chop</span>, my debut
-              cookbook which is available to pre-order now. The book is
-              officially on sale
-              <span class="text-red font-bold">March 18, 2025</span>. All the
-              details are here, including links for where you can pre-order.
+              <span class="text-red font-bold">Signed copies available from</span> <a href="https://www.bembrooklyn.com/products/chop-chop-cooking-the-food-of-nigeria-ozoz-sokoh" target="_blank">BEM Brooklyn</a>  so you can Travel to Nigeria, by plate with <span class="text-red font-bold">Chop Chop, my debut cookbook!</span> The book is officially on sale <span class="text-red font-bold">March 18, 2025.</span> You’ll find all the details here including links for where you can pre-order in Nigeria, and around the world!
             </p>
             <div class="mt-10 flex items-center gap-x-6">
               <nuxt-link
@@ -68,6 +63,13 @@ const goToAbout = () => {
         <div
           class="flex flex-col order-3 gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue">
           <h3 class="text-2xl text-red">United States</h3>
+          <nuxt-link
+            to="https://www.bembrooklyn.com/products/chop-chop-cooking-the-food-of-nigeria-ozoz-sokoh"
+            target="_blank"
+            class="flex items-center gap-3 p-2">
+            BEM
+            <Icon name="material-symbols:arrow-outward" size="20" />
+          </nuxt-link>
           <nuxt-link
             to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan"
             target="_blank"

@@ -100,6 +100,13 @@ const saveImg = (img: string) => {
             <h3 class="font-medium text-2xl text-red">United States</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
+                to="https://www.bembrooklyn.com/products/chop-chop-cooking-the-food-of-nigeria-ozoz-sokoh"
+                target="_blank"
+                class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
+                BEM
+                <Icon name="material-symbols:arrow-outward" size="20" />
+              </nuxt-link>
+              <nuxt-link
                 to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
@@ -220,7 +227,7 @@ const saveImg = (img: string) => {
             <h3 class="font-medium text-2xl text-red">New Zealand</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="https://www.mightyape.co.nz/product/chop-chop-hardback/38994783"
+                to="https://www.mightyape.co.nz/mn/buy/mighty-ape-chop-chop-38994783/"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
                 Mighty Ape
@@ -232,10 +239,10 @@ const saveImg = (img: string) => {
             <h3 class="font-medium text-2xl text-red">Nigeria</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="https://www.narrativelandscape.com/"
+                to="https://www.narrativelandscape.com/product/chop-chop/"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                Narrative Landscape Press (Coming soon)
+                Narrative Landscape Press
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
             </div>
@@ -244,10 +251,10 @@ const saveImg = (img: string) => {
             <h3 class="font-medium text-2xl text-red">Australia</h3>
             <div class="flex flex-wrap gap-4 mt-2 text-blue">
               <nuxt-link
-                to="https://www.qbd.com.au/"
+                to="https://www.qbd.com.au/chop-chop/ozoz-sokoh/9781648291890/"
                 target="_blank"
                 class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-                QBD (Coming soon)
+                QBD
                 <Icon name="material-symbols:arrow-outward" size="20" />
               </nuxt-link>
               <nuxt-link
