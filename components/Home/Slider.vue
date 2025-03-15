@@ -1,5 +1,16 @@
 <script setup lang="ts">
-const swiperInstance = ref(null);
+import type { SanityDocument } from "@sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import {
+  PortableText,
+  type PortableTextVueComponents,
+} from "@portabletext/vue";
+import { resolveComponent } from "vue";
+
+import { Swiper as SwiperClass } from "swiper/types";
+
+const swiperInstance = ref<SwiperClass | null>(null);
 
 const onSwiper = (swiper: any) => {
   swiperInstance.value = swiper;
@@ -17,6 +28,67 @@ const swipeNext = () => {
   }
 };
 
+const ABOUT_QUERY = groq`*[_type == "about"][0]{
+ ...,
+}`;
+const { data: aboutData, error } = await useSanityQuery<SanityDocument>(
+  ABOUT_QUERY
+);
+
+const { projectId, dataset } = useSanity().client.config();
+const urlFor = (source: SanityImageSource) =>
+  projectId && dataset
+    ? imageUrlBuilder({ projectId, dataset }).image(source)
+    : null;
+
+const aboutDataItem = aboutData.value;
+
+const customPortableTextComponents: Partial<PortableTextVueComponents> = {
+  marks: {
+    strong: (props) =>
+      h(
+        "strong",
+        {
+          class: "text-red font-bold",
+        },
+        props.text
+      ),
+    link: ({ value }, { slots }) => {
+      const Icon = resolveComponent("Icon");
+      const rel = !value.href.startsWith("/")
+        ? "noreferrer noopener"
+        : undefined;
+      return h(
+        "a",
+        {
+          href: value.href,
+          rel,
+          target: value.href.startsWith("/") ? undefined : "_blank",
+          class: "text-red-2",
+        },
+        [
+          slots.default?.(),
+          h(Icon, {
+            name: "material-symbols:arrow-outward",
+            size: "16",
+            class: "pt-2",
+          }),
+        ]
+      );
+    },
+  },
+  block: {
+    normal: (_, { slots }) =>
+      h(
+        "p",
+        {
+          class: "mt-5 text-lg/[140%]",
+        },
+        slots.default?.()
+      ),
+  },
+};
+
 const breakpoints = ref({
   768: {
     slidesPerView: 1,
@@ -29,23 +101,33 @@ const breakpoints = ref({
 });
 </script>
 <template>
-  <div class="w-[287px] mx-auto md:w-full max-w-[1101px] text-brown">
+  <div v-if="error" class="flex justify-center items-center h-screen">
+    <p class="text-red text-xl">Error loading content: {{ error }}</p>
+  </div>
+
+  <div
+    v-if="aboutData"
+    class="w-[287px] mx-auto md:w-full max-w-[1101px] text-brown"
+  >
     <button
       @click="swipePrev()"
       :class="{
         'absolute top-[50%] translate-y-[-50%] cursor-pointer left-1 flex items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey': true,
-      }">
+      }"
+    >
       <Icon name="material-symbols:arrow-left-alt" size="20" />
     </button>
     <button
       @click="swipeNext()"
       :class="{
         'absolute top-[50%] translate-y-[-50%] cursor-pointer flex right-1 items-center justify-center w-14 h-14 rounded-full bg-red-2 text-white disabled:bg-blue-3 disabled:text-grey': true,
-      }">
+      }"
+    >
       <Icon
         name="material-symbols:arrow-left-alt"
         size="20"
-        class="rotate-180" />
+        class="rotate-180"
+      />
     </button>
     <Swiper
       :modules="[SwiperNavigation]"
@@ -57,360 +139,24 @@ const breakpoints = ref({
           slidesPerView: 3,
         },
       }"
-      @swiper="onSwiper">
+      @swiper="onSwiper"
+    >
       <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
+        v-for="(img, index) in aboutDataItem?.myjourney"
+        :key="index"
+        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]"
+      >
         <div class="w-full flex items-start">
           <div class="w-full">
             <img
-              src="/img/journey1.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Ozoz was born in Warri, on the southern coast of Nigeria
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full pt-20">
-            <img
-              src="/img/journey2.webp"
-              alt="journey one img"
-              class="max-w-[280px] w-full" />
-            <p class="mt-5 text-lg/[140%]">
-              She didn’t enjoy food until <span class="font-bold">1985</span>,
-              when she was nine years old. She fell in love with a hamburger and
-              Mirinda at Wimpy’s on Princes Street in Edinburgh
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full flex flex-col justify-center items-center">
-            <img
-              src="/img/journey3.webp"
-              alt="journey one img"
-              class="w-full max-w-[177px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Ozoz did not like Chemistry so opted out of Quantity Surveying,
-              studying Urban & Regional Planning instead at Obafemi Awolowo
-              University, Ile-Ife until <span class="font-bold">1997</span>. She
-              loved cooking for her friends.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey4.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              In <span class="font-bold">1997</span>, she moved to the UK to
-              study Geology, and fell in love with Chemistry.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full flex flex-col pt-20 justify-center items-center">
-            <img
-              src="/img/journey5.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              During her time in the UK, she discovered food as comfort, and
-              began cooking Nigerian dishes to fight homesickness. In
-              <span class="font-bold">1998</span>, she created her first recipe,
-              <nuxt-link
-                to="https://www.kitchenbutterfly.com/2010/el-salvador-platanos-fritos-and-me/"
-                target="_blank"
-                class="text-red-2"
-                >tomato salsa
-                <Icon
-                  name="material-symbols:arrow-outward"
-                  size="16"
-                  class="pt-2" /></nuxt-link
-              >, which she still makes today.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey6.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Ozoz worked as a geologist in Nigeria, then moved abroad. In
-              <span class="font-bold">2009</span>, she began writing Kitchen
-              Butterfly, her food blog while living and working in The
-              Netherlands.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey7.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Her interest in travel, recipe research and development deepened
-              with writing.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey8.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Her love for food history and its importance as cultural identity
-              began in <span class="font-bold">2009, 2010</span> when she
-              discovered Brazilian Acarajé, and its origins in
-              <nuxt-link
-                to="https://www.kitchenbutterfly.com/2010/akara-acaraje-the-brazilian-nigerian-connection/"
-                target="_blank"
-                class="text-red-2">
-                Nigerian Àkàrà
-                <Icon
-                  name="material-symbols:arrow-outward"
-                  size="16"
-                  class="pt-2" /> </nuxt-link
-              >. This was a turning point in her food journey.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey9.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Upon her return to Nigeria in <span class="font-hold">2011</span>,
-              she deepened her food research on Nigerian ingredients,
-              techniques, practices and more, in an attempt to document and
-              codify the cuisine, including building
-              <nuxt-link
-                to="https://www.kitchenbutterfly.com/2018/version-1-3-nigerian-seasonal-produce-calendar-2/"
-                target="_blank"
-                class="text-red-2">
-                Nigeria’s first seasonal produce calendar
-                <Icon
-                  name="material-symbols:arrow-outward"
-                  size="16"
-                  class="pt-2" /> </nuxt-link
-              >.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey10.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              In <span class="font-bold">2014</span>, she presented her work
-              Journey by Plate at
-              <nuxt-link
-                to="https://www.youtube.com/watch?v=TiSluxo1Bds"
-                target="_blank"
-                class="text-red-2">
-                TEDx
-                <Icon
-                  name="material-symbols:arrow-outward"
-                  size="16"
-                  class="pt-2" />
-              </nuxt-link>
-              Port Harcourt. In it, she documents the origins, philosophy and
-              practice of her ongoing
-              <nuxt-link
-                to="https://www.kitchenbutterfly.com/philosophy-practice/"
-                target="_blank"
-                class="text-red-2">
-                #NewNigerianKitchen
-                <Icon
-                  name="material-symbols:arrow-outward"
-                  size="16"
-                  class="pt-2" />
-              </nuxt-link>
-              project.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey11.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              In the intervening years, Sokoh has created experiences including
-              <nuxt-link
-                to="https://www.instagram.com/explore/search/keyword/?q=%23foodmeetsliterature"
-                target="_blank"
-                class="text-red-2">
-                #EattheBooks
-                <Icon
-                  name="material-symbols:arrow-outward"
-                  size="16"
-                  class="pt-2" /> </nuxt-link
-              >, celebrating literary and visual works and translating them to
-              tastes in food and drink, at events and festivals across the
-              world.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey12.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Her interest in curatorial work has led to the development of
-              exhibitions including the <span class="font-bold">2019</span> Food
-              is More Than Eating Exhibition held as part of the Abori Food
-              System Design Summit.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey13.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              Sokoh launched
-              <nuxt-link
-                to="https://www.feastafrique.com/"
-                target="_blank"
-                class="text-red-2"
-                >Feast Afrique
-                <Icon
-                  name="material-symbols:arrow-outward"
-                  size="16"
-                  class="pt-2"
-              /></nuxt-link>
-              in <span class="font-bold">2020</span>, an online platform
-              dedicated to the documentation and celebration of West African
-              Food and Drink. A digital library of
-              <span class="font-bold">250</span>+ West African and diasporic
-              culinary and literary resources are a key part of this work.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey14.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              In <span class="font-bold">2021</span>, Ozoz graduated with Honors
-              from the Museum and Cultural Management Program at Centennial
-              College, Canada.
-            </p>
-          </div>
-          <div class="pt-[120px] w-full max-w-[87px]">
-            <img src="/svg/link.svg" alt="link icon" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-        class="w-[287px!important] max-w-[287px!important] md:min-w-[367px!important] md:max-w-[367px!important]">
-        <div class="w-full flex items-start">
-          <div class="w-full">
-            <img
-              src="/img/journey15.webp"
-              alt="journey one img"
-              class="w-full max-w-[280px]" />
-            <p class="mt-5 text-lg/[140%]">
-              She is a professor of Food and Tourism Studies at Centennial
-              College.
-            </p>
+              :src="urlFor(img.image)?.url()"
+              :alt="`journey ${index} img`"
+              class="w-full max-w-[280px]"
+            />
+            <PortableText
+              :value="img?.subtitle"
+              :components="customPortableTextComponents"
+            />
           </div>
           <div class="pt-[120px] w-full max-w-[87px]">
             <img src="/svg/link.svg" alt="link icon" />

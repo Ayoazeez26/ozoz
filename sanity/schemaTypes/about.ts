@@ -82,19 +82,26 @@ export default defineType({
     }),
 
     // My jouney
-    defineField({
+    /*   defineField({
       name: 'myjourney',
       title: 'My Journey',
       type: 'reference',
       to: {type: 'myJourney'},
+    }), */
+
+    defineField({
+      name: 'myjourney',
+      title: 'My Journey',
+      type: 'array',
+      of: [{type: 'pictureText'}],
     }),
 
     // Other Works
     defineField({
-      name: 'otherWork',
+      name: 'otherWorks',
       title: 'Other Works',
-      type: 'reference',
-      to: {type: 'otherWork'},
+      type: 'array',
+      of: [{type: 'otherWork'}],
     }),
   ],
 })

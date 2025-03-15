@@ -14,13 +14,20 @@ export default defineType({
     defineField({
       name: 'subtitle',
       title: 'Subtitle',
-      type: 'string',
+      type: 'array',
+      of: [{type: 'block'}],
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'url',
       title: 'URL',
       type: 'url',
+    }),
+    defineField({
+      name: 'urlBlank',
+      title: 'Open in New Tab',
+      type: 'boolean',
+      initialValue: true,
     }),
     defineField({
       name: 'image',

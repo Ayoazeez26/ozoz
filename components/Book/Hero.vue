@@ -8,19 +8,6 @@ import {
 } from "@portabletext/vue";
 
 const data = useDataStore();
-const thumbImages = ref([
-  "first",
-  "second",
-  "third",
-  "fourth",
-  "fifth",
-  "sixth",
-  "seventh",
-  "eight",
-  "ninth",
-  "tenth",
-  "eleventh",
-]);
 const saveImg = (img: string) => {
   if (!img) return;
   data.clickedImg = img;
@@ -65,6 +52,7 @@ const customPortableTextComponents: Partial<PortableTextVueComponents> = {
         {
           href: value.href,
           rel,
+          target: value.href.startsWith("/") ? undefined : "_blank",
           class: "text-red font-bold underline",
         },
         slots.default?.()
