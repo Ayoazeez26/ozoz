@@ -1,5 +1,16 @@
 <script setup lang="ts">
-const about = ref(null);
+import type { SanityDocument } from "@sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
+import {
+  PortableText,
+  type PortableTextVueComponents,
+} from "@portabletext/vue";
+
+import { ref } from "vue";
+
+const about = ref<HTMLElement | null>(null);
 const goToAbout = () => {
   // const element = document.querySelector(letter.to);
   const offset = 210; // Adjust this value to match the combined height of the navbar and search bar
@@ -13,44 +24,125 @@ const goToAbout = () => {
     });
   }
 };
+
+const HOME_QUERY = groq`*[_type == "home"][0]{
+ ...,
+  "purchaseLocations": purchaseLocations[]->{
+    ...,
+  }
+}`;
+const {
+  data: homeData,
+  error,
+  status,
+} = await useSanityQuery<SanityDocument>(HOME_QUERY);
+
+const { projectId, dataset } = useSanity().client.config();
+const urlFor = (source: SanityImageSource) =>
+  projectId && dataset
+    ? imageUrlBuilder({ projectId, dataset }).image(source)
+    : null;
+
+// Access the first item directly without using the nested .value property
+const homeDataItem = homeData.value;
+
+console.log("home title:", homeDataItem?.purchaseLocations, status.value);
+
+// Define custom components for rendering specific block elements
+const customPortableTextComponents: Partial<PortableTextVueComponents> = {
+  marks: {
+    strong: (props) =>
+      h(
+        "strong",
+        {
+          class: "text-red font-bold",
+        },
+        props.text
+      ),
+    link: ({ value }, { slots }) => {
+      const rel = !value.href.startsWith("/")
+        ? "noreferrer noopener"
+        : undefined;
+      return h(
+        "a",
+        {
+          href: value.href,
+          rel,
+          class: "text-red font-bold underline",
+        },
+        slots.default?.()
+      );
+    },
+  },
+};
 </script>
 
 <template>
-  <div class="bg-brown-3 scroll-smooth">
+  <!-- Show loading state while data is loading -->
+  <!-- <div
+    v-if="status.value === 'pending'"
+    class="flex justify-center items-center h-screen"
+  >
+    <p class="text-blue text-xl">Loading...</p>
+  </div> -->
+
+  <!-- Show error state if there's an error -->
+  <div v-if="error" class="flex justify-center items-center h-screen">
+    <p class="text-red text-xl">Error loading content: {{ error }}</p>
+  </div>
+
+  <!-- Only show content when data is loaded and available -->
+  <!-- v-else-if="status.value === 'success' && homeData && homeDataItem?.title" -->
+  <div v-if="homeData" class="bg-brown-3 scroll-smooth">
     <div class="relative isolate flex flex-col items-center md:pt-14">
       <img
         src="/svg/bg-lines.svg"
         alt="lines"
-        class="absolute -top-40 left-0 right-0 z-0" />
+        class="absolute -top-40 left-0 right-0 z-0"
+      />
       <img
         src="/svg/branch.svg"
         alt="branch image"
-        class="absolute top-40 left-0 z-0 rotate-z" />
+        class="absolute top-40 left-0 z-0 rotate-z"
+      />
 
       <img
         src="/svg/branch.svg"
+        loading="lazy"
         alt="branch image"
-        class="absolute bottom-0 right-40 rotate-180 z-0" />
+        class="absolute bottom-0 right-40 rotate-180 z-0"
+      />
       <div
-        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 flex flex-col md:flex-row flex-wrap lg:justify-between lg:items-center lg:gap-x-2 xl:px-0 lg:py-40">
+        class="mx-auto w-full max-w-7xl px-4 md:px-6 relative z-[1] py-20 sm:py-32 flex flex-col md:flex-row flex-wrap lg:justify-between lg:items-center lg:gap-x-2 xl:px-0 lg:py-40"
+      >
         <div
-          class="mt-16 order-2 md:order-1 relative sm:mt-24 lg:mt-0 flex justify-start self-start">
+          class="mt-16 order-2 md:order-1 relative sm:mt-24 lg:mt-0 flex justify-start self-start"
+        >
           <img
-            src="/img/chop-book.webp"
+            v-if="homeDataItem?.heroImage"
+            :src="urlFor(homeDataItem?.heroImage)?.url()"
             alt="chop book"
-            class="w-4/5 mx-auto md:mx-0 md:w-full md:max-w-[364px]" />
+            class="w-4/5 mx-auto md:mx-0 md:w-full md:max-w-[364px]"
+          />
         </div>
         <div
-          class="mx-auto w-full order-1 md:order-2 max-w-[585px] lg:mx-0 lg:flex-auto">
+          class="mx-auto w-full order-1 md:order-2 max-w-[585px] lg:mx-0 lg:flex-auto"
+        >
           <h1
-            class="mt-10 lg:mt-0 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]">
-            Chop Chop
+            v-if="homeDataItem?.title"
+            class="mt-10 lg:mt-0 text-pretty text-6xl font-medium tracking-tight text-red sm:text-7xl md:text-[112px]"
+          >
+            {{ homeDataItem?.title }}
           </h1>
-          <div class="">
-            <p
-              class="mt-6 md:mt-8 text-pretty text-base/[140%] text-brown sm:text-lg/[140%]">
-              <span class="text-red font-bold">Signed copies available from <a href="https://www.bembrooklyn.com/products/chop-chop-cooking-the-food-of-nigeria-ozoz-sokoh" target="_blank" class="underline">BEM Brooklyn</a></span>  so you can Travel to Nigeria, by plate with <span class="text-red font-bold">Chop Chop, my debut cookbook!</span> The book is officially on sale <span class="text-red font-bold">March 18, 2025.</span> You’ll find all the details here including links for where you can pre-order in Nigeria, and around the world!
-            </p>
+          <div class="" v-if="homeDataItem?.subtitle">
+            <div
+              class="mt-6 md:mt-8 text-pretty text-base/[140%] home-subtitle text-brown sm:text-lg/[140%]"
+            >
+              <PortableText
+                :value="homeDataItem?.subtitle"
+                :components="customPortableTextComponents"
+              />
+            </div>
             <div class="mt-10 flex items-center gap-x-6">
               <nuxt-link
                 to="/book"
@@ -61,62 +153,32 @@ const goToAbout = () => {
           </div>
         </div>
         <div
-          class="flex flex-col order-3 gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue">
-          <h3 class="text-2xl text-red">United States</h3>
-          <nuxt-link
-            to="https://www.bembrooklyn.com/products/chop-chop-cooking-the-food-of-nigeria-ozoz-sokoh"
-            target="_blank"
-            class="flex items-center gap-3 p-2">
-            BEM
-            <Icon name="material-symbols:arrow-outward" size="20" />
-          </nuxt-link>
-          <nuxt-link
-            to="https://www.hachettebookgroup.com/titles/ozoz-sokoh/chop-chop/9781648291890/?lens=artisan"
-            target="_blank"
-            class="flex items-center gap-3 p-2">
-            HBG
-            <Icon name="material-symbols:arrow-outward" size="20" />
-          </nuxt-link>
-          <nuxt-link
-            to="https://www.barnesandnoble.com/w/chop-chop-ozoz-sokoh/1145934034;jsessionid=F8B6CB4B7D560C9E313FD3BEBD33A386.prodny_store01-atgap05?ean=9781648291890&st=AFF&2sid=Hachette%20Book%20Group_8040641_NA&sourceId=AFFHachette%20Book%20Group"
-            target="_blank"
-            class="flex items-center gap-3 p-2">
-            Barnes & Noble
-            <Icon name="material-symbols:arrow-outward" size="20" /> </nuxt-link
-          ><nuxt-link
-            to="https://www.booksamillion.com/p/9781648291890?cjdata=MXxOfDB8WXww&AID=11552245&PID=8040641&cjevent=94a30174721611ef8328b0cd0a82b820"
-            target="_blank"
-            class="flex items-center gap-3 p-2 text-lg cursor-pointer font-medium">
-            Books-a-Million
-            <Icon name="material-symbols:arrow-outward" size="20" />
-          </nuxt-link>
-          <h3 class="text-2xl text-red">Canada</h3>
-          <nuxt-link
-            to="https://www.adifferentbooklist.com/item/BXWUqR7ec6jvgFHW4zLVlQ"
-            target="_blank"
-            class="flex items-center gap-3 p-2 font-medium">
-            A Different Booklist
-            <Icon name="material-symbols:arrow-outward" size="20" />
-          </nuxt-link>
-          <nuxt-link
-            to="https://anotherstory.ca/item/BXWUqR7ec6jvgFHW4zLVlQ"
-            target="_blank"
-            class="flex items-center gap-3 p-2 font-medium">
-            Another Story Bookshop
-            <Icon name="material-symbols:arrow-outward" size="20" />
-          </nuxt-link>
-          <nuxt-link
-            to="https://shoplocal.bookmanager.com/isbn/9780525612544"
-            target="_blank"
-            class="flex items-center gap-3 p-2">
-            Shop Local
-            <Icon name="material-symbols:arrow-outward" size="20" />
-          </nuxt-link>
+          class="flex flex-col order-3 gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue"
+        >
+          <div
+            class="flex flex-col order-3 gap-6 mt-10 lg:mt-0 text-lg font-medium text-blue"
+            v-for="purchaseLocation in homeDataItem?.purchaseLocations"
+            :key="purchaseLocation?._id"
+          >
+            <h3 class="text-2xl text-red">{{ purchaseLocation.title }}</h3>
+
+            <nuxt-link
+              v-for="buyLink in purchaseLocation.buyLinks"
+              :key="buyLink._id"
+              :to="buyLink.url"
+              target="_blank"
+              class="flex items-center gap-3 p-2"
+            >
+              {{ buyLink.retailer }}
+              <Icon name="material-symbols:arrow-outward" size="20" />
+            </nuxt-link>
+          </div>
         </div>
       </div>
       <button
         @click="goToAbout"
-        class="text-blue hidden md:flex pb-8 font-medium gap-3 relative z-[1] cursor-pointer items-center">
+        class="text-blue hidden md:flex pb-8 font-medium gap-3 relative z-[1] cursor-pointer items-center"
+      >
         SCROLL DOWN <Icon name="solar:arrow-down-linear" size="20" />
       </button>
       <div ref="about" />
@@ -124,4 +186,8 @@ const goToAbout = () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* .home-subtitle strong {
+  color: #b4181a !important;
+} */
+</style>

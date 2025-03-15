@@ -31,10 +31,12 @@ onUnmounted(() => {
     :class="[
       'fixed top-0 left-0 right-0 z-10 transition-all duration-300',
       isScrolled ? 'bg-brown-3' : 'bg-transparent',
-    ]">
+    ]"
+  >
     <nav
       class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
-      aria-label="Global">
+      aria-label="Global"
+    >
       <div class="flex lg:flex-1">
         <nuxt-link to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Ozoz Sokoh</span>
@@ -67,22 +69,26 @@ onUnmounted(() => {
         <button
           type="button"
           class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-brown"
-          @click="mobileMenuOpen = true">
+          @click="mobileMenuOpen = true"
+        >
           <span class="sr-only">Open main menu</span>
           <Icon
             name="icon-park-outline:hamburger-button"
             size="20"
-            aria-hidden="true" />
+            aria-hidden="true"
+          />
         </button>
       </div>
     </nav>
     <HeadlessDialog
       class="lg:hidden"
       @close="mobileMenuOpen = false"
-      :open="mobileMenuOpen">
+      :open="mobileMenuOpen"
+    >
       <div class="fixed inset-0 z-10" />
       <HeadlessDialogPanel
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-brown-3 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-brown-3 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+      >
         <div class="flex items-center justify-between gap-x-6">
           <nuxt-link to="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Ozoz Sokoh</span>
@@ -92,18 +98,21 @@ onUnmounted(() => {
           <button
             type="button"
             class="-m-2.5 rounded-md p-2.5 text-brown"
-            @click="mobileMenuOpen = false">
+            @click="mobileMenuOpen = false"
+          >
             <span class="sr-only">Close menu</span>
             <Icon
               name="material-symbols:close-rounded"
               size="20"
-              aria-hidden="true" />
+              aria-hidden="true"
+            />
           </button>
         </div>
         <div class="mt-6 flow-root">
           <div
             @click="mobileMenuOpen = false"
-            class="-my-6 divide-y divide-gray-500/10">
+            class="-my-6 divide-y divide-gray-500/10"
+          >
             <div class="space-y-8 mt-6 py-6">
               <nuxt-link
                 v-for="item in navigation"

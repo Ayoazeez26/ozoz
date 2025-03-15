@@ -8,6 +8,8 @@ dist
 
 # Node dependencies
 node_modules
+/sanity/node_modules
+/sanity/dist
 
 # Logs
 logs

@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "nuxt-swiper",
     "@pinia/nuxt",
-    "@pinia-plugin-persistedstate/nuxt"
+    "@pinia-plugin-persistedstate/nuxt",
+    "@nuxtjs/sanity",
   ],
   app: {
     head: {
@@ -29,5 +30,10 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  ignore: ["sanity"],
+  sanity: {
+    projectId: "4nw76214",
+    dataset: "production",
   },
 });
