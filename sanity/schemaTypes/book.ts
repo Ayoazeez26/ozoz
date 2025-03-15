@@ -35,7 +35,7 @@ export default defineType({
       name: 'sneakPeek',
       title: 'Sneak Peek',
       type: 'array',
-      of: [{type: 'image', options: {hotspot: true}}],
+      of: [{type: 'pictureText'}],
     }),
 
     defineField({

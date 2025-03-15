@@ -2,7 +2,6 @@
 import type { SanityDocument } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
-
 import {
   PortableText,
   type PortableTextVueComponents,
@@ -45,8 +44,6 @@ const urlFor = (source: SanityImageSource) =>
 
 // Access the first item directly without using the nested .value property
 const homeDataItem = homeData.value;
-
-console.log("home title:", homeDataItem?.purchaseLocations, status.value);
 
 // Define custom components for rendering specific block elements
 const customPortableTextComponents: Partial<PortableTextVueComponents> = {
